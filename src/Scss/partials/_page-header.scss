@@ -4,34 +4,34 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 220px;
-    background: rgba(9, 9, 9, 0.62);
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6vw), 0 100%);
+    height: 200px;
+    margin-bottom: 50px;
+    background: $site-header-bg;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
     overflow: hidden;
 
     h1 {
-        background: #000;
-        color: #ddd;
+        background: $site-header-h1-bg;
+        border-top: 3px solid $site-header-h1-border;
+        border-bottom: 3px solid $site-header-h1-border;
+        color: $site-header-h1-txt;
         font-family: 'BigNoodleTitling', sans-serif;
-        text-transform: uppercase;
         font-size: 60px;
         font-weight: 400;
-        letter-spacing: 4px;
-        text-shadow: 4px 3px #8653b1;
-        border-top: 3px solid #7e61a3bd;
-        border-bottom: 3px solid #7e61a3bd;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 4px 3px $site-header-h1-shadow;
+        letter-spacing: 1px;
+        width: 120%;
         margin: 0;
         padding: 10px 0;
         transform: rotateZ(-3deg);
-        text-align: center;
-        width: 120%;
-        backface-visibility: initial;
-        outline: 1px solid #0000;
         transform-style: preserve-3d;
+        backface-visibility: initial;
     }
 
     h2 {
-        color: #8653b1;
+        color: $site-header-h2-txt;
         font-family: 'BigNoodleTitling', sans-serif;
         text-transform: uppercase;
         font-size: 25px;
@@ -42,30 +42,4 @@ header {
         letter-spacing: 2px;
         width: 100%;
     }
-}
-
-.skip-link {
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    font-size: 1.33rem;
-    box-sizing: border-box;
-    display: inline-block;
-    background: #fe9476;
-    color: #263147;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    top: 1rem;
-    left: 1rem;
-    z-index: 99;
-    border-radius: 0.25rem;
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
 }

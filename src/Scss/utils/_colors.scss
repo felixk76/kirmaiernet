@@ -1,7 +1,22 @@
 $white: #fff;
 $black: #000;
 $transparent: transparent;
+$grey1: rgba(9, 9, 9, 0.62);
+$grey2: #cbcbca;
+$purple1: #8653b1;
+$purple2: #7e61a3bd;
 $yellow1: #feb309;
 
+// Basics
+$body-txt-default: $white;
+
+// Site Header
+$site-header-bg: $grey1;
+$site-header-h1-bg: $black;
+$site-header-h1-txt: $grey2;
+$site-header-h1-shadow: $purple1;
+$site-header-h1-border: $purple2;
+$site-header-h2-txt: $purple1;
+
 // Text
-$text-headline: $yellow1;
+$text-headline-default: $yellow1;
