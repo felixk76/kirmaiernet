@@ -18,9 +18,9 @@
     "eslint-nibble": "eslint-nibble .",
     "start": "npx eleventy --serve",
     "stylelint-find-rules": "stylelint-find-new-rules",
-    "stylelint": "stylelint 'extensions/lra_sitepackage/Resources/Private/Scss/**/*.scss' --formatter verbose",
-    "stylelint-fix": "stylelint 'extensions/lra_sitepackage/Resources/Private/Scss/**/*.scss'  --fix --formatter verbose",
-    "stylelint-config": "stylelint 'extensions/lra_sitepackage/Resources/Private/Scss/style.scss' --print-config"
+    "stylelint": "stylelint 'src/Scss/**/*.scss' --formatter verbose",
+    "stylelint-fix": "stylelint 'src/Scss/**/*.scss'  --fix --formatter verbose",
+    "stylelint-config": "stylelint 'srcScss/style.scss' --print-config"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.4",
