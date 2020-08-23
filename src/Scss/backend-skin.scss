@@ -1,0 +1,21 @@
+// Utils
+@import 'utils/variables';
+@import 'utils/colors';
+@import 'utils/mixins';
+@import 'utils/bp';
+@import 'utils/webfonts';
+
+// Base
+@import 'base/richtext-content';
+
+// Modules
+
+/* stylelint-disable selector-class-pattern */
+.exampleContent {
+    // Overwrite TYPO3 default styling
+    ul,
+    ol {
+        padding-inline-start: 0;
+    }
+}
+/* stylelint-enable selector-class-pattern */

@@ -1,0 +1,9 @@
+.blur-up {
+    filter: blur(5px);
+    width: 100%;
+    height: auto;
+
+    &.lazyloaded {
+        filter: none;
+    }
+}

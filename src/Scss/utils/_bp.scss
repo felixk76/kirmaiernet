@@ -1,0 +1,149 @@
+%bp-readme {
+    display: none;
+
+    //   Breakpoint mixin by Felix Kirmaier
+    //     Usage :
+    //
+    //     @include bp($value, $minmax, $property, $orientation) {
+    //        CSS
+    //      }
+    //
+    //      Parameter:
+    //
+    //      $value: value of breakpoint
+    //              keyword or value with unit (see table below eg: small, medium, 1337px, 666rem  etc.)
+    //              optional
+    //              default: null
+    //
+    //      $minmax: type (min or max)
+    //               min or max
+    //               optional
+    //               default: min
+    //
+    //      $property: width or height
+    //                 width, height, for the lazy w or h
+    //                 optional
+    //                 default: width
+    //
+    //      $orientation: portrait or landscape
+    //                    portrait, landscape, for the lazy po or ls
+    //                    optional
+    //                    default: null
+    //
+    //      Examples:
+    //
+    //      .foo {
+    //        @include bp(small) {
+    //            margin: 0;
+    //        }
+    //      }
+    //
+    //      .bar {
+    //        @include bp(small,max,h,ls) {
+    //            margin: 10px;
+    //        }
+    //      }
+    //
+    //      .baz {
+    //        @include bp(100px,max,$orientation:ls){
+    //            margin: 200px;
+    //        }
+    //      }
+    //
+    //
+    //
+    //      CSS:
+    //      @media only screen and (min-width: 640px) {
+    //        .foo {
+    //            margin:0;
+    //        }
+    //      }
+    //
+    //     @media only screen and (max-height: 640px) and (orientation: landscape) {
+    //        .bar {
+    //            margin:0;
+    //        }
+    //      }
+    //
+    //      @media only screen and (max-width: 100px) and (orientation: landscape) {
+    //        .baz {
+    //            margin: 200px;
+    //        }
+    //      }
+    //
+}
+
+@mixin respond($value: null, $minmax: null, $property: null, $orientation: null) {
+    $query: ' only screen';
+    $query-minmax: null;
+    $query-property: null;
+    $query-dimension: null;
+    $query-orientation: null;
+
+    @if ($value) {
+        @if ($minmax) {
+            @if($minmax == 'min') or ($minmax == 'max') {
+                $query-minmax: $minmax;
+            } @else {
+                $query-minmax: 'min';
+            }
+        } @else {
+            $query-minmax: 'min';
+        }
+
+        @if ($property) {
+            @if($property == 'width') or ($property == 'w') {
+                $query-property: 'width';
+            }
+
+            @if ($property == 'height') or ($property == 'h') {
+                $query-property: 'height';
+            }
+        } @else {
+            $query-property: 'width';
+        }
+
+        // scss-lint:disable SpaceAroundOperator
+        $query-dimension: 'and (' + $query-minmax + '-' + $query-property + ': ' + $value + ')';
+    } @else {
+        $query-dimension: '';
+    }
+
+    @if ($orientation) {
+        @if($orientation == 'portrait') or ($orientation == 'po') or ($orientation == 'p') {
+            $query-orientation: 'and (orientation: portrait)';
+        }
+
+        @if($orientation == 'landscape') or ($orientation == 'ls') or ($orientation == 'l') {
+            $query-orientation: 'and (orientation: landscape)';
+        }
+    } @else {
+        $query-orientation: '';
+    }
+
+    @media #{$query + ' ' + $query-dimension + $query-orientation} {
+        @content;
+    }
+}
+
+$breakpoints: (
+    small1: '375px',
+    small2: '480px',
+    medium1: '768px',
+    large1: '1024px',
+    large2: '1280px',
+    large3: '1440px',
+    large4: '1920px',
+);
+
+@mixin bp($breakpoint, $minmax: null, $property: null, $orientation: null) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @include respond(#{map-get($breakpoints, $breakpoint)}, $minmax, $property, $orientation) {
+            @content;
+        }
+    } @else {
+        @include respond(#{$breakpoint}, $minmax, $property, $orientation) {
+            @content;
+        }
+    }
+}
