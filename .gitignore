@@ -1,2 +1,6 @@
 .vscode
 .history
+
+*.ttf
+node_modules/
+dist/
