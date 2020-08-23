@@ -1,0 +1,91 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/felixkirmaier/website.git"
+  },
+  "keywords": [],
+  "author": "Felix Kirmaier",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/felixkirmaier/website#readme",
+  "scripts": {
+    "copyjs": "grunt copy:vendorJS",
+    "eslint": "eslint .",
+    "eslint-fix": "eslint . --fix",
+    "eslint-nibble": "eslint-nibble .",
+    "start": "npx eleventy --serve",
+    "stylelint-find-rules": "stylelint-find-new-rules",
+    "stylelint": "stylelint 'extensions/lra_sitepackage/Resources/Private/Scss/**/*.scss' --formatter verbose",
+    "stylelint-fix": "stylelint 'extensions/lra_sitepackage/Resources/Private/Scss/**/*.scss'  --fix --formatter verbose",
+    "stylelint-config": "stylelint 'extensions/lra_sitepackage/Resources/Private/Scss/style.scss' --print-config"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "buffer-crc32": "^0.2.13",
+    "eslint-config-se-es5": "git+ssh://git@bitbucket.org/saint-elmos/eslint-config-se-es5.git",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "grunt": "^1.0.4",
+    "grunt-contrib-compress": "^1.6.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-eslint": "^23.0.0",
+    "grunt-htmllint": "git+https://git@github.com/fkirmaier-saintelmos/grunt-htmllint.git",
+    "grunt-notify": "^0.4.5",
+    "grunt-nunjucks-2-html": "^3.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-prettify": "git+https://git@github.com/fkirmaier-saintelmos/grunt-prettify.git",
+    "grunt-rsync": "^3.0.0",
+    "grunt-sass": "^3.1.0",
+    "grunt-stylelint": "^0.15.0",
+    "grunt-terser": "^1.0.0",
+    "grunt-zopfli-native": "^2.0.0",
+    "htmllint-cli": "git+https://git@github.com/kevinlee12/htmllint-cli.git",
+    "iltorb": "^2.4.4",
+    "load-grunt-config": "^3.0.1",
+    "node-sass": "^4.13.0",
+    "nunjucks": "^3.2.2",
+    "postcss": "^7.0.32",
+    "postcss-critical-split": "^2.5.3",
+    "postcss-pxtorem": "^5.1.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-se": "git+ssh://git@bitbucket.org/saint-elmos/stylelint-config-se.git",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0",
+    "time-grunt": "^2.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "fg-loadcss": "^3.1.0",
+    "intersection-observer": "^0.11.0",
+    "lazysizes": "^5.2.0",
+    "picturefill": "^3.0.3"
+  },
+  "optionalDependencies": {
+    "eslint-nibble": "^5.1.0",
+    "husky": "^4.2.5",
+    "mrm": "^2.3.3",
+    "lint-staged": "^10.2.11",
+    "stylelint-find-new-rules": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": [
+    "last 2 version",
+    "not ie > 0",
+    "not ie_mob > 0",
+    "> 5%"
+  ]
+}
