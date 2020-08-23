@@ -11,8 +11,6 @@
 @import 'base/basics';
 @import 'base/richtext-content';
 
-// Themes
-
 // Vendors
 
 // Partials
@@ -22,3 +20,7 @@
 
 // Modules
 @import 'modules/text';
+
+// Themes
+@import 'themes/basics';
+@import 'themes/text';

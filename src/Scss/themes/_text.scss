@@ -2,3 +2,17 @@
 .theme0 {
     --text-headline: #{$text-headline-default};
 }
+
+.theme1 {
+    --text-headline: #{$text-headline-theme1};
+}
+
+.text {
+    @media (prefers-color-scheme: dark) {
+        --text-headline: #{$text-headline-default};
+    }
+
+    @media (prefers-color-scheme: light) {
+        --text-headline: #{$text-headline-theme1};
+    }
+}

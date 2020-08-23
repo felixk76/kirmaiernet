@@ -1,0 +1,18 @@
+// Text Theme
+.theme0 {
+    --site-header-bg: $site-header-bg-default;
+}
+
+.theme1 {
+    --site-header-bg: $site-header-bg-theme1;
+}
+
+.header {
+    @media (prefers-color-scheme: dark) {
+        --site-header-bg: $site-header-bg-default;
+    }
+
+    @media (prefers-color-scheme: light) {
+        --site-header-bg: $site-header-bg-theme1;
+    }
+}

@@ -6,7 +6,7 @@ header {
     align-items: center;
     height: 200px;
     margin-bottom: 50px;
-    background: $site-header-bg;
+    background: var(--site-header-bg, $site-header-bg-default);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
     overflow: hidden;
 

@@ -1,6 +1,7 @@
+.DS_Store
 .vscode
 .history
 
-*.ttf
 node_modules/
 dist/
+src/fonts/original/
