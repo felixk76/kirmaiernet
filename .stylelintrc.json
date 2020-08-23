@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-se"],
+  "ignoreFiles": [
+    "src/Scss/vendors/*.scss"
+  ],
+  "rules": {
+    "font-weight-notation": "numeric"
+    }
+}

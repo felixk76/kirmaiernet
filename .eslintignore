@@ -1,0 +1,7 @@
+node_modules/**/*.js
+vendor/**/*.js
+
+**/cypress/**/*.js
+
+!src/JavaScript/**/*.js
+src/JavaScript/vendors/**/*.js

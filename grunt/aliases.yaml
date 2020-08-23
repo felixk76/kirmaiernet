@@ -1,0 +1,29 @@
+default: []
+
+lint:
+  - 'stylelint'
+  - 'eslint'
+  - 'htmllint'
+
+compile:
+ - 'stylelint'
+ - 'eslint'
+ - 'sass:compile'
+ - 'postcss:compile'
+ - 'postcss:critical'
+ - 'postcss:uncritical'
+ - 'cssmin:compile'
+ - 'terser'
+ - 'htmllint'
+
+build:
+  - 'lint'
+  - 'sass:build'
+  - 'postcss:build'
+  - 'postcss:critical'
+  - 'postcss:uncritical'
+  - 'cssmin:build'
+  - 'terser'
+  - 'compress'
+  - 'zopfli'
+
