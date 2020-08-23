@@ -1,17 +1,14 @@
-html {
-    &.noscroll {
-        overflow: hidden;
-    }
+:root {
+    --body-txt: #{$body-txt-default};
 }
 
 body {
-    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    font-family: $font-default-family;
+    font-family: 'Manrope Regular', 'Arial', sans-serif;
     font-weight: $font-weight-regular;
     background: url('../images/grunge_purple2X.jpg');
-    color: #fff;
+    color: var(--body-txt, $body-txt-default);
 
     @supports (font-variation-settings: normal) {
         font-family: $font-default-family;

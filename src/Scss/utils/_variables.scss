@@ -6,15 +6,13 @@ $z-layers: (
 );
 
 // Font path
-$font-resource-base-path: '/typo3conf/ext/lra-sitepackage/Resources/Public/Fonts/' !default;
+$font-resource-base-path: '/Fonts/' !default;
 
 // Default font
-$font-default-family: 'Open Sans', arial, sans-serif !default;
-$font-default-bold-family: 'Open Sans Bold', arial, sans-serif !default;
-$font-primary-family: 'Codec', arial, sans-serif !default;
+$font-default-family: 'Manrope Variable', arial, sans-serif !default;
 
 // Font weights
-$font-weight-regular: 400 !default;
+$font-weight-regular: 300 !default;
 $font-weight-bold: 600 !default;
 $font-weight-extrabold: 700 !default;
 
