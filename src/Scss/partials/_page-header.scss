@@ -4,7 +4,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 40vw;
+    min-height: 200px;
+    max-height: 350px;
     margin-bottom: 50px;
     background: var(--site-header-bg, $site-header-bg-default);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
@@ -28,6 +30,19 @@ header {
         transform: rotateZ(-3deg);
         transform-style: preserve-3d;
         backface-visibility: initial;
+
+        @include bp(600px) {
+            font-size: 70px;
+        }
+
+        @include bp(medium1) {
+            font-size: 70px;
+        }
+
+        @include bp(large1) {
+            font-size: 90px;
+        }
+
     }
 
     h2 {
