@@ -3,12 +3,18 @@ $black: #000;
 $transparent: transparent;
 $grey1: #090909;
 $grey2: #cbcbca;
+$grey3: #aeaeae;
+$grey4: #f3f3f3;
 $purple1: #8653b1;
 $purple2: #7e61a3bd;
+$purple3: #32104c;
+$purple4: #ddb5ff;
 $yellow1: #feb309;
 
 // Basics
-$body-txt-default: $white;
+$body-bg-default: $purple3;
+$body-bg-theme1: $white;
+$body-txt-default: $grey4;
 $body-txt-theme1: $black;
 
 // Site Header
@@ -20,7 +26,7 @@ $site-header-h1-border: $purple2;
 $site-header-h2-txt: $purple1;
 
 // Site Header Theme1
-$site-header-bg-default: transparentize($grey1, 0.18);
+$site-header-bg-theme1: transparentize($grey1, 0.1);
 
 // Site Footer
 $site-footer-bg-default: transparentize($grey1, 0.38);
@@ -31,7 +37,7 @@ $site-footer-border-default: $purple1;
 $site-footer-border-theme1: $purple1;
 
 // Text
-$text-headline-default: $yellow1;
+$text-headline-default: $purple4;
 $text-headline-theme1: $purple1;
 
 // Skills
@@ -41,3 +47,31 @@ $skills-list-item-txt-theme1: $black;
 $skills-list-item-border-default: $purple4;
 $skills-list-item-border-theme1: $purple4;
 $skills-list-item-bg-default: $black;
+
+[data-theme='dark'] {
+    --body-txt: #{$body-txt-default};
+
+    // --body-bg: url('../images/grunge_purple2X.jpg');
+    --body-bg: #{$body-bg-default};
+    --site-header-bg: #{$site-header-bg-default};
+    --site-footer-bg: #{$site-footer-bg-default};
+    --site-footer-txt: #{$site-footer-txt-default};
+    --site-footer-border: #{$site-footer-border-default};
+    --text-headline: #{$text-headline-default};
+    --skills-list-item-txt: #{$skills-list-item-txt-default};
+    --skills-list-item-border: #{$skills-list-item-border-default};
+}
+
+[data-theme='light'] {
+    --body-txt: #{$body-txt-theme1};
+
+    // --body-bg: url('../images/grunge2X.jpg');
+    --body-bg: #{$body-bg-theme1};
+    --site-header-bg: #{$site-header-bg-theme1};
+    --site-footer-bg: #{$site-footer-bg-theme1};
+    --site-footer-txt: #{$site-footer-txt-theme1};
+    --site-footer-border: #{$site-footer-border-theme1};
+    --text-headline: #{$text-headline-theme1};
+    --skills-list-item-txt: #{$skills-list-item-txt-theme1};
+    --skills-list-item-border: #{$skills-list-item-border-theme1};
+}

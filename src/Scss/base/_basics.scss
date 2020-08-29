@@ -1,19 +1,33 @@
-:root {
-    --body-txt: #{$body-txt-default};
+html {
+    width: 100%;
+    min-height: 100%;
 }
 
 body {
+    display: grid;
+
+    // grid-template-rows: max-content 1fr min-content;
+    grid-template-rows: auto 1fr auto;
+    width: 100%;
+    min-height: 100%;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Manrope Regular', 'Arial', sans-serif;
     font-weight: $font-weight-regular;
-    background: url('../images/grunge_purple2X.jpg');
+
+    // background: url('../images/grunge_purple2X.jpg');
+    background: var(--body-bg, $body-bg-default);
     color: var(--body-txt, $body-txt-default);
+    transition: color 300ms, background-color 300ms;
 
     @supports (font-variation-settings: normal) {
         font-family: $font-default-family;
         font-weight: $font-weight-regular;
     }
+}
+
+main {
+    grid-row: 2 / 3;
 }
 
 a {
