@@ -1,6 +1,19 @@
 ---
 title: 'Felix Kirmaier - Frontend Developer'
 layout: 'layouts/home.html'
+skillstitle: 'Was ich so beruflich mach:'
+skills:
+    - 'Responsive Web Design'
+    - 'TYPO3'
+    - 'Performance'
+    - 'HTML // CSS // JS'
+    - 'DevOps'
+    - 'Technical SEO'
+    - 'Visual Regression Tests'
+    - 'End-to-end Tests'
+    - 'Coach'
+    - 'Consultant'
+    - 'Speaker'
 ---
 ### Servus, ich bin der Felix.
 

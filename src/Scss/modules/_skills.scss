@@ -1,0 +1,48 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // background: $skills-bg-default;
+    // padding: 40px inherit;
+    // clip-path: polygon(0 5vw, 100% 0, 100% calc(100% - 5vw), 0 100%);
+    // position: relative;
+    // margin-top: calc(( var(--clip-padding) * -1 ) + 18px);
+    // padding-top: calc(20px + calc(( var(--clip-padding) * 2 ) - ( var(--clip-padding) - var(--skew-padding) )));
+    // padding-bottom: calc(20px + calc(( var(--clip-padding) * 2 ) - ( var(--clip-padding) - var(--skew-padding) )));
+    // clip-path: polygon(0% calc(var(--clip-padding) * 2), 100% 0%, 100%  calc(100% - calc(var(--clip-padding) * 2)), 0% 100%);
+}
+
+.skills-inner-wrap {
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: var(--content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        padding: 10px;
+        min-width: 90px;
+        text-align: center;
+
+        // background: $skills-list-item-bg-default;
+        // border: 2px dotted #8653b161;
+        border: 2px dashed var(--skills-list-item-border, $skills-list-item-border-default);
+        color: var(--skills-list-item-txt, $skills-list-item-txt-default);
+        text-transform: uppercase;
+        font-family: monospace;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0 10px 10px 0;
+    }
+
+}

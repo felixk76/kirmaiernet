@@ -1,6 +1,16 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-    <article class="text">
+    <article class="text intro">
         {{ content | safe }}
+    </article>
+    <article class="text skills">
+        <div class="skills-inner-wrap">
+            <h2>{{ skillstitle }}</h2>
+            <ul class="skills-list">
+                {% for skill in skills %}
+                <li>{{ skill }}</li>
+                {% endfor %}
+            </ul>
+        </div>
     </article>
 {% endblock %}
