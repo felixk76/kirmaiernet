@@ -18,3 +18,28 @@ $font-weight-extrabold: 700 !default;
 
 // Width
 $max-width: 1920px;
+
+:root {
+    --width: 100vw;
+    --full-width: 100vw;
+    --content-max-width: 80ch;
+    --angle: -3deg;
+
+    // @media (min-width: 42em) {
+    //     --width: 42rem;
+    // }
+
+    /* -----------------
+    Magic Number Alert:
+    the 0.09719 is calculated by this formula:
+    tan(11°) / 2
+    11° is the current skewY value.
+    ------------------ */
+    --magic-number: 0.0262039;
+    --skew-padding: calc(var(--width) * var(--magic-number));
+    --clip-padding: calc(var(--full-width) * var(--magic-number));
+
+    @media (min-width: 768px) {
+        --width: var(--content-max-width);
+    }
+}
