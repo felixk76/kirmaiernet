@@ -3,18 +3,16 @@ default: []
 lint:
   - 'stylelint'
   - 'eslint'
-  - 'htmllint'
 
 compile:
- - 'stylelint'
- - 'eslint'
+ - 'lint'
  - 'sass:compile'
  - 'postcss:compile'
  - 'postcss:critical'
  - 'postcss:uncritical'
  - 'cssmin:compile'
  - 'terser'
- - 'htmllint'
+
 
 build:
   - 'lint'

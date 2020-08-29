@@ -1,5 +1,4 @@
 {
     "*.scss": "stylelint",
-    "*.js": "eslint",
-    "dist/Html/**/*.html": "node_modules/.bin/htmllint --rc .htmllintrc",
-  }
+    "*.js": "eslint"
+}

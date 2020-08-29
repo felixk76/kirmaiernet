@@ -49,7 +49,6 @@
     "grunt-stylelint": "^0.15.0",
     "grunt-terser": "^1.0.0",
     "grunt-zopfli-native": "^2.0.0",
-    "htmllint-cli": "git+https://git@github.com/kevinlee12/htmllint-cli.git",
     "iltorb": "^2.4.4",
     "load-grunt-config": "^3.0.1",
     "node-sass": "^4.13.0",
