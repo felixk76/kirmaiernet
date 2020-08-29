@@ -3,5 +3,5 @@ vendor/**/*.js
 
 **/cypress/**/*.js
 
-!src/JavaScript/**/*.js
-src/JavaScript/vendors/**/*.js
+!src/js/**/*.js
+src/js/vendors/**/*.js

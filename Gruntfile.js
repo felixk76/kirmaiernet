@@ -7,9 +7,9 @@ module.exports = function(grunt) {
                 providerext: 'extensions/lra_sitepackage/',
                 scss: 'src/Scss/',
                 css: 'dist/Css/',
-                js: 'dist/JavaScript/',
-                jsVendors: 'src/Private/JavaScript/vendors/',
-                jsPrivate: 'src/JavaScript/',
+                js: 'dist/js/',
+                jsVendors: 'src/Private/js/vendors/',
+                jsPrivate: 'src/js/',
                 html: 'dist/Html/',
                 nunjucks: 'src/Nunjucks/',
             }
