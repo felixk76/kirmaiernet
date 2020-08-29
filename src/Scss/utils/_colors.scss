@@ -22,6 +22,14 @@ $site-header-h2-txt: $purple1;
 // Site Header Theme1
 $site-header-bg-default: transparentize($grey1, 0.18);
 
+// Site Footer
+$site-footer-bg-default: transparentize($grey1, 0.38);
+$site-footer-bg-theme1: transparentize($grey1, 0.1);
+$site-footer-txt-default: $purple1;
+$site-footer-txt-theme1: $purple1;
+$site-footer-border-default: $purple1;
+$site-footer-border-theme1: $purple1;
+
 // Text
 $text-headline-default: $yellow1;
 $text-headline-theme1: $purple1;
