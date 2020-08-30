@@ -1,6 +1,9 @@
 ---
 title: 'Felix Kirmaier - Frontend Developer - Impressum'
 layout: 'layouts/impressum.html'
+eleventyNavigation:
+    key: Impressum
+    order: 1
 mainheadline: 'Impressum'
 
 address:

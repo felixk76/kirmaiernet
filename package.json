@@ -23,6 +23,7 @@
     "stylelint-config": "stylelint 'srcScss/style.scss' --print-config"
   },
   "devDependencies": {
+    "@11ty/eleventy-navigation": "^0.1.6",
     "autoprefixer": "^9.8.4",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",

@@ -1,6 +1,8 @@
 ---
 title: 'Felix Kirmaier - Frontend Developer'
 layout: 'layouts/home.html'
+eleventyNavigation:
+    key: Home
 skillstitle: 'Was ich so beruflich mach:'
 skills:
     - 'Responsive Web Design'
