@@ -15,7 +15,7 @@ skills:
     - 'Consultant'
     - 'Speaker'
 ---
-### Servus, ich bin der Felix.
+## Servus, ich bin der Felix.
 
 Als Frontend Developer aus Unterhaching bei München versuche ich seit 17&nbsp;Jahren (mit&nbsp;wechselndem&nbsp;Erfolg) perfekte Websites zu basteln.
 
