@@ -1,19 +1,19 @@
 html {
     width: 100%;
     min-height: 100%;
+    font-size: 118.8%; // 19px
 }
 
 body {
     display: grid;
-
-    // grid-template-rows: max-content 1fr min-content;
     grid-template-rows: auto 1fr auto;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Manrope Regular', 'Arial', sans-serif;
     font-weight: $font-weight-regular;
+    line-height: 1.6;
 
     // background: url('../images/grunge_purple2X.jpg');
     background: var(--body-bg, $body-bg-default);
@@ -30,9 +30,61 @@ main {
     grid-row: 2 / 3;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 2.75rem 0 1.05rem;
+    line-height: 1.15;
+    color: var(--text-headline, $text-headline-default);
+}
+
+h1 {
+    font-size: 1.953em;
+
+    @include bp(large1) {
+        font-size: 3.375em;
+    }
+}
+
+h2 {
+    font-size: 1.563em;
+
+    @include bp(large1) {
+        font-size: 2.25em;
+    }
+}
+
+h3 {
+    font-size: 1.25em;
+
+    @include bp(large1) {
+        font-size: 1.5em;
+    }
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+small {
+    font-size: 0.8em;
+
+    @include bp(large1) {
+        font-size: 0.667em;
+    }
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 1.15rem;
+    max-width: 63ch;
 }
 
 img,
