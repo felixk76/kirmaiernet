@@ -5,6 +5,7 @@ $grey1: #090909;
 $grey2: #cbcbca;
 $grey3: #aeaeae;
 $grey4: #f3f3f3;
+$grey5: #333;
 $purple1: #8653b1;
 $purple2: #7e61a3bd;
 $purple3: #32104c;
@@ -15,7 +16,7 @@ $yellow1: #feb309;
 $body-bg-default: $purple3;
 $body-bg-theme1: $white;
 $body-txt-default: $grey4;
-$body-txt-theme1: $black;
+$body-txt-theme1: $grey5;
 
 // Site Header
 $site-header-bg-default: transparentize($grey1, 0.38);
@@ -39,6 +40,10 @@ $site-footer-border-theme1: $purple1;
 // Text
 $text-headline-default: $purple4;
 $text-headline-theme1: $purple1;
+$text-list-marker-default: $purple4;
+$text-list-marker-theme1: $purple1;
+$text-link-default: $purple4;
+$text-link-theme1: $purple1;
 
 // Skills
 $skills-bg-default: transparentize($grey3, 0.88);
@@ -58,6 +63,7 @@ $skills-list-item-bg-default: $black;
     --site-footer-txt: #{$site-footer-txt-default};
     --site-footer-border: #{$site-footer-border-default};
     --text-headline: #{$text-headline-default};
+    --list-marker: #{$text-list-marker-default};
     --skills-list-item-txt: #{$skills-list-item-txt-default};
     --skills-list-item-border: #{$skills-list-item-border-default};
 }
@@ -72,6 +78,7 @@ $skills-list-item-bg-default: $black;
     --site-footer-txt: #{$site-footer-txt-theme1};
     --site-footer-border: #{$site-footer-border-theme1};
     --text-headline: #{$text-headline-theme1};
+    --list-marker: #{$text-list-marker-theme1};
     --skills-list-item-txt: #{$skills-list-item-txt-theme1};
     --skills-list-item-border: #{$skills-list-item-border-theme1};
 }
