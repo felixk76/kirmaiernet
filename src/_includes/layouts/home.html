@@ -1,9 +1,39 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-    <article class="text intro">
+<article class="intro">
+    <figure class="intro-image-container">
+        <picture>
+            <source type="image/webp"
+            srcset="
+            /Images/intro/intro_500.webp 500w,
+            /Images/intro/intro_388.webp 388w,
+            /Images/intro/intro_300.webp 300w"
+
+            sizes="
+            (min-width: 1680px) 500px,
+            (min-width: 1200px) 380px,
+            (min-width: 1024px) 350px,
+            300px" />
+            <source type="image/png"
+            srcset="
+            /Images/intro/intro_500.png 500w,
+            /Images/intro/intro_388.png 388w,
+            /Images/intro/intro_300.png 300w"
+
+            sizes="
+            (min-width: 1680px) 500px,
+            (min-width: 1200px) 380px,
+            (min-width: 1024px) 350px,
+            300px" />
+            <img class="intro-image" src="/Images/intro/intro_300.png" width="300">
+        </picture>
+    </figure>
+    <h2 class="intro-headline">{{intro.headline}}</h2>
+    <div class="intro-text">
         {{ content | safe }}
+    </div>
     </article>
-    <article class="text skills">
+    <article class="skills">
         <div class="skills-inner-wrap">
             <h2>{{ skillstitle }}</h2>
             <ul class="skills-list">

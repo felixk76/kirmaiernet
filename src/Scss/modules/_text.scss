@@ -1,12 +1,6 @@
 // Text Module
 .text {
-    padding: 0 6.25%;
-
-    @include bp(1680px) {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0;
-    }
+    @include content-element-layout;
 
     ol,
     ul {
@@ -72,10 +66,4 @@
             border-bottom: 1px solid;
         }
     }
-}
-
-.intro {
-    // max-width: var(--content-max-width);
-    margin-left: auto;
-    margin-right: auto;
 }

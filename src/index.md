@@ -3,6 +3,9 @@ title: 'Felix Kirmaier - Frontend Developer'
 layout: 'layouts/home.html'
 eleventyNavigation:
     key: Home
+
+intro:
+    headline: 'Servus, ich bin der Felix'
 skillstitle: 'Was ich so beruflich mach:'
 skills:
     - 'Responsive Web Design'
@@ -17,8 +20,6 @@ skills:
     - 'Consultant'
     - 'Speaker'
 ---
-## Servus, ich bin der Felix.
-
 Als Frontend Developer aus Unterhaching bei München versuche ich seit 17&nbsp;Jahren (mit&nbsp;wechselndem&nbsp;Erfolg) perfekte Websites zu basteln.
 
 Außer der Optik, auf unterschiedlichsten Geräten, ist mir vor allem die Performance und Benutzerfreundlichkeit extremst wichtig.

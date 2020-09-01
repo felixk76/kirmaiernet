@@ -10,6 +10,7 @@ $purple1: #8653b1;
 $purple2: #7e61a3bd;
 $purple3: #32104c;
 $purple4: #ddb5ff;
+$purple5: #1c0b23;
 $yellow1: #feb309;
 
 // Basics
@@ -45,6 +46,10 @@ $text-list-marker-theme1: $purple1;
 $text-link-default: $purple4;
 $text-link-theme1: $purple1;
 
+// Intro
+$intro-image-bg-default: $purple5;
+$intro-image-bg-theme1: $purple3;
+
 // Skills
 $skills-bg-default: transparentize($grey3, 0.88);
 $skills-list-item-txt-default: $grey4;
@@ -67,6 +72,7 @@ $skills-list-item-bg-default: $black;
     --list-marker: #{$text-list-marker-default};
     --skills-list-item-txt: #{$skills-list-item-txt-default};
     --skills-list-item-border: #{$skills-list-item-border-default};
+    --intro-image-bg: #{$intro-image-bg-default};
 }
 
 [data-theme='light'] {
@@ -83,4 +89,6 @@ $skills-list-item-bg-default: $black;
     --list-marker: #{$text-list-marker-theme1};
     --skills-list-item-txt: #{$skills-list-item-txt-theme1};
     --skills-list-item-border: #{$skills-list-item-border-theme1};
+    --intro-image-bg: #{transparentize($grey1, 0.38)};
+    --intro-image-bg: #{$intro-image-bg-theme1};
 }
