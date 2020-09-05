@@ -37,6 +37,10 @@ $site-footer-txt-default: $purple1;
 $site-footer-txt-theme1: $purple1;
 $site-footer-border-default: $purple1;
 $site-footer-border-theme1: $purple1;
+$site-footer-socialmedia-default: transparentize($white, 0.7);
+$site-footer-socialmedia-hover-default: $white;
+$site-footer-socialmedia-theme1: transparentize($purple1, 0.7);
+$site-footer-socialmedia-hover-theme1: $purple1;
 
 // Text
 $text-headline-default: $purple4;
@@ -67,6 +71,8 @@ $skills-list-item-bg-default: $black;
     --site-footer-bg: #{$site-footer-bg-default};
     --site-footer-txt: #{$site-footer-txt-default};
     --site-footer-border: #{$site-footer-border-default};
+    --site-footer-socialmedia: #{$site-footer-socialmedia-default};
+    --site-footer-socialmedia-hover: #{$site-footer-socialmedia-hover-default};
     --text-headline: #{$text-headline-default};
     --text-link: #{$text-link-default};
     --list-marker: #{$text-list-marker-default};
@@ -84,6 +90,8 @@ $skills-list-item-bg-default: $black;
     --site-footer-bg: #{$site-footer-bg-theme1};
     --site-footer-txt: #{$site-footer-txt-theme1};
     --site-footer-border: #{$site-footer-border-theme1};
+    --site-footer-socialmedia: #{$site-footer-socialmedia-theme1};
+    --site-footer-socialmedia-hover: #{$site-footer-socialmedia-hover-theme1};
     --text-headline: #{$text-headline-theme1};
     --text-link: #{$text-link-theme1};
     --list-marker: #{$text-list-marker-theme1};

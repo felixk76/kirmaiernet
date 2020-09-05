@@ -1,21 +1,55 @@
 // Page Footer
 .site-footer {
     grid-row: 3 / 4;
+    width: 100%;
+    margin-top: 60px;
+
+    @include bp(medium1) {
+        margin-top: 120px;
+    }
+}
+
+.site-footer-socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+
+    a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin: 0 10px;
+        fill: var(--site-footer-socialmedia, $site-footer-socialmedia-default);
+        transition: fill 300ms ease-out;
+
+        @include bp(medium1) {
+            padding: 5px;
+            margin: 0 20px;
+        }
+
+        &:hover {
+            fill: var(--site-footer-socialmedia-hover, $site-footer-socialmedia-hover-default);
+        }
+    }
+
+}
+
+.site-footer-legal-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    padding: 5px 1.25em;
     color: var(--site-footer-txt, $site-footer-txt-default);
     background: var(--site-footer-bg, $site-footer-bg-default);
     border-top: 3px solid var(--site-footer-border, $site-footer-border-default);
     font-size: 16px;
-    padding: 5px 1.25em;
-    margin-top: 60px;
 
     @include bp(medium1) {
         padding: 0 2.5em;
-        margin-top: 120px;
     }
 }
 

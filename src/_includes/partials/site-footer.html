@@ -1,13 +1,23 @@
+
 <footer class="site-footer">
-    <div>&copy; 2020 kirmaier.net</div>
-    <nav class="site-footer-legal">
-        {% set footerPages = collections.footer | eleventyNavigation %}
-        <ul>
-            {%- for entry in footerPages %}
-            <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
-                <a href="{{ entry.url | url }}">{{ entry.title }}</a>
-            </li>
-            {%- endfor %}
-        </ul>
-    </nav>
+    <ul class="site-footer-socialmedia">
+        {% for item in social.items %}
+        <li>
+          <a href="{{ item.url }}" title="{{ item.name }}" target="_blank" rel="noindex nofollow">{{ item.icon | svgContents | safe }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="site-footer-legal-wrap">
+        <div>&copy; 2020 kirmaier.net</div>
+        <nav class="site-footer-legal">
+            {% set footerPages = collections.footer | eleventyNavigation %}
+            <ul>
+                {%- for entry in footerPages %}
+                <li{% if entry.url == page.url %} class="my-active-class"{% endif %}>
+                    <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                </li>
+                {%- endfor %}
+            </ul>
+        </nav>
+    </div>
 </footer>
