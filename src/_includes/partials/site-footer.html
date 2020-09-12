@@ -3,7 +3,7 @@
     <ul class="site-footer-socialmedia">
         {% for item in social.items %}
         <li>
-          <a href="{{ item.url }}" title="{{ item.name }}" target="_blank" rel="noindex nofollow">{{ item.icon | svgContents | safe }}</a>
+          <a href="{{ item.url }}" title="{{ item.name }}" target="_blank" rel="noopener noreferrer">{{ item.icon | svgContents | safe }}</a>
         </li>
         {% endfor %}
     </ul>
