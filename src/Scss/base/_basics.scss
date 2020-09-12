@@ -16,7 +16,7 @@ body {
     line-height: 1.6;
 
     // background: url('../images/grunge_purple2X.jpg');
-    background: var(--body-bg, $body-bg-default);
+    background: var(--body-bg) var(--body-bg-img);
     color: var(--body-txt, $body-txt-default);
     transition: color 300ms, background-color 300ms;
 
@@ -35,7 +35,7 @@ h2,
 h3,
 h4,
 h5 {
-    margin: 2.75rem 0 1.05rem;
+    margin: 2.75rem 0 1.15rem;
     line-height: 1.15;
     color: var(--text-headline, $text-headline-default);
 }

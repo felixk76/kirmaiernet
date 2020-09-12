@@ -10,9 +10,9 @@
 @mixin content-element-layout {
     padding: 0 6.25%;
 
-    @include bp(1680px) {
-        max-width: 1400px;
+    @include bp(1350px) {
+        max-width: 1350px;
         margin: 0 auto;
-        padding: 0;
+        padding: 0 75px;
     }
 }

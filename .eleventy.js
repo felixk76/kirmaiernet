@@ -5,6 +5,8 @@ module.exports = config => {
     config.addPassthroughCopy('./src/*.ico');
     config.addPassthroughCopy('./src/*.png');
     config.addPassthroughCopy('./src/browserconfig.xml');
+    config.addPassthroughCopy('./src/*.webmanifest');
+    config.addPassthroughCopy('./src/robots.txt');
 
     const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
     const svgContents = require("eleventy-plugin-svg-contents");
@@ -14,7 +16,16 @@ module.exports = config => {
     config.addCollection('footer', collection => {
         return collection
           .getFilteredByGlob('./src/footer/*.md')
-      });
+    });
+
+    config.addPairedShortcode("articlefullwidth", function(data) {
+          return "<div class='article-fullwidth'>"+data+"</div>";
+    });
+
+    config.addPairedShortcode("articlecolumn", function(data, column) {
+          return "<div class='article-col"+column+"'>"+data+"</div>";
+    });
+
 
     return {
         markdownTemplateEngine: 'njk',

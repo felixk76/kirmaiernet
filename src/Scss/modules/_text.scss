@@ -66,4 +66,46 @@
             border-bottom: 1px solid;
         }
     }
+
+    &.article-2col {
+        display: grid;
+
+        @include bp(medium1) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        h1,
+        h2,
+        h3 {
+            grid-column: 1 / -1;
+        }
+    }
+
+    .article-fullwidth {
+        grid-column: 1 / -1;
+    }
+
+    .article-col1 {
+        grid-column: 1 / 2;
+    }
+
+    .article-col2 {
+        padding-bottom: 1.05em;
+
+        @include bp(medium1) {
+            grid-column: 2 / 3;
+        }
+    }
+
+    &.uses {
+        &.article-2col {
+            @include bp(800px) {
+                grid-template-columns: auto 1fr;
+                grid-column-gap: 40px;
+
+                // max-width: calc(144ch + 40px);
+
+            }
+        }
+    }
 }
