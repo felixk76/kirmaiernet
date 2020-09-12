@@ -195,7 +195,7 @@ z. B. die Annahme von Third-Party-Cookies oder allen Cookies ablehnen. Sog. „T
 - Neben der rein informatorischen Nutzung meiner Website biete ich verschiedene Leistungen an, die Sie bei Interesse nutzen können. Dazu müssen Sie in der Regel weitere personenbezogene Daten angeben, die ich zur Erbringung der jeweiligen Leistung nutze und für die die zuvor genannten Grundsätze zur Datenverarbeitung gelten.
 - Teilweise bediene ich mich zur Verarbeitung Ihrer Daten externer Dienstleister. Diese wurden von mir sorgfältig ausgewählt und beauftragt, sind an meine Weisungen gebunden und werden regelmäßig kontrolliert.
 - Weiterhin kann ich Ihre personenbezogenen Daten an Dritte weitergeben, wenn Vertragsabschlüsse oder ähnliche Leistungen von mir gemeinsam mit Partnern angeboten werden. Nähere Informationen hierzu erhalten Sie bei Angabe Ihrer personenbezogenen Daten oder untenstehend in der Beschreibung des Angebotes.
-- Soweit meine Dienstleister oder Partner ihren Sitz in einem Staat außerhalb des Europäischen Wirtschaftsraumen (EWR) haben, informiere ich Sie über die Folgen dieses Umstands in der Beschreibung des Angebotes.
+- Soweit meine Dienstleister oder Partner ihren Sitz in einem Staat außerhalb des Europäischen Wirtschaftsraumes (EWR) haben, informiere ich Sie über die Folgen dieses Umstands in der Beschreibung des Angebotes.
 
 ### Kinder
 
