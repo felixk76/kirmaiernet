@@ -1,6 +1,6 @@
 ---
-title: 'Felix Kirmaier - Frontend Developer - Datenschutz'
-layout: 'layouts/impressum.html'
+title: 'Felix Kirmaier - Frontend Developer - Uses'
+layout: 'layouts/text.html'
 eleventyNavigation:
     key: uses
 articleclass: 'article-2col uses'

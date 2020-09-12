@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-    <article class="text intro">
+    <article class="text {% if articleclass %} {{articleclass}} {% endif %}">
         <h1>{{mainheadline}} </h1>
         {% if address %}
         <h4>{{address.headline}}</h4>

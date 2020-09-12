@@ -1,6 +1,6 @@
 ---
 title: 'Felix Kirmaier - Frontend Developer - Datenschutz'
-layout: 'layouts/impressum.html'
+layout: 'layouts/text.html'
 eleventyNavigation:
     key: Datenschutz
     order: 2
