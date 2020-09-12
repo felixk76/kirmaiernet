@@ -1,0 +1,9 @@
+{
+    "author": "Felix Kirmaier",
+    "description": "Persönliche Website von Felix Kirmaier, Frontend Developer aus Unterhaching bei München",
+    "root": "https://www.kirmaier.net",
+    "generator": "Eleventy",
+    "language": "de-DE",
+    "twitter": "@felixk76"
+}
+
