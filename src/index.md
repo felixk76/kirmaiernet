@@ -12,6 +12,7 @@ skills:
     - 'TYPO3'
     - 'Performance'
     - 'HTML // CSS // JS'
+    - 'Code Reviews'
     - 'DevOps'
     - 'Technical SEO'
     - 'Visual Regression Tests'
@@ -20,8 +21,11 @@ skills:
     - 'Consultant'
     - 'Speaker'
 ---
-Als Frontend Developer aus Unterhaching bei München versuche ich seit 17&nbsp;Jahren (mit&nbsp;wechselndem&nbsp;Erfolg) perfekte Websites zu basteln.
+Als Frontend Developer aus Unterhaching, bei München, versuche ich seit 17&nbsp;Jahren (mit&nbsp;wechselndem&nbsp;Erfolg) perfekte Websites zu basteln.
 
-Außer der Optik, auf unterschiedlichsten Geräten, ist mir vor allem die Performance und Benutzerfreundlichkeit extremst wichtig.
+Außer der Darstellung, auf unterschiedlichsten Geräten, ist mir vor allem die Performance extremst wichtig.
+Die Erkenntnisse aus meiner täglichen Arbeit gebe ich seit Jahren in Agenturen, bei Barcamps, Usergroups und Konferenzen, mit großem Spaß an Interessierte weiter.
 
-Da sich meine hohen Ansprüche nur mit einer sehr guten Teamleistung befriedigen lassen gebe ich mein Wissen seit Jahren in Agenturen, bei Barcamps, Usergroups und Konferenzen, gerne an Gleichgesinnte weiter, und feile an Strukturen und Prozessen um die Zusammenarbeit im Team (mit mir) zu vereinfachen.
+Über Fragen, Anregungen, Lob, Kritik oder ähnliches, per Mail oder Nachricht in den unten verlinkten Netzwerken freue ich mich sehr.
+
+Hier erfährst Du mehr über mich, mein Setup habe ich auf meiner  <a href="./uses/">"/uses"-Seite</a> aufgelistet,

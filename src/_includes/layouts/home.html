@@ -1,6 +1,6 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-<article class="intro">
+<article class="intro text">
     <figure class="intro-image-container">
         <picture>
             <source type="image/webp"
@@ -10,8 +10,7 @@
             /Images/intro/intro_300.webp 300w"
 
             sizes="
-            (min-width: 1680px) 500px,
-            (min-width: 1200px) 380px,
+            (min-width: 1350px) 500px,
             (min-width: 1024px) 350px,
             300px" />
             <source type="image/png"
@@ -21,11 +20,10 @@
             /Images/intro/intro_300.png 300w"
 
             sizes="
-            (min-width: 1680px) 500px,
-            (min-width: 1200px) 380px,
+            (min-width: 1350px) 500px,
             (min-width: 1024px) 350px,
             300px" />
-            <img class="intro-image" src="/Images/intro/intro_300.png" width="300">
+            <img class="intro-image" src="/Images/intro/intro_300.png" width="300" alt="Foto von Felix Kirmaier">
         </picture>
     </figure>
     <h2 class="intro-headline">{{intro.headline}}</h2>
@@ -33,6 +31,7 @@
         {{ content | safe }}
     </div>
     </article>
+    <!--
     <article class="skills">
         <div class="skills-inner-wrap">
             <h2>{{ skillstitle }}</h2>
@@ -43,4 +42,5 @@
             </ul>
         </div>
     </article>
+    -->
 {% endblock %}
