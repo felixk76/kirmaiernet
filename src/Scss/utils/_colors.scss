@@ -12,12 +12,13 @@ $purple2: #7e61a3bd;
 $purple3: #32104c;
 $purple4: #ddb5ff;
 $purple5: #1c0b23;
+$purple6: #bfb4c8;
 $yellow1: #feb309;
 
 // Basics
 $body-bg-default: $purple3;
 $body-bg-theme1: $white;
-$body-txt-default: $grey4;
+$body-txt-default: $purple6;
 $body-txt-theme1: $grey5;
 
 // Site Header
@@ -66,9 +67,10 @@ $skills-list-item-bg-default: $black;
 /*! purgecss start ignore */
 [data-theme='dark'] {
     --body-txt: #{$body-txt-default};
-
-    // --body-bg: url('../images/grunge_purple2X.jpg');
     --body-bg: #{$body-bg-default};
+    --body-bg-img: url('/images/grunge-dark.jpg');
+
+    // --body-bg: url('../images/grunge_purple2.jpg');
     --site-header-bg: #{$site-header-bg-default};
     --site-footer-bg: #{$site-footer-bg-default};
     --site-footer-txt: #{$site-footer-txt-default};
@@ -85,9 +87,8 @@ $skills-list-item-bg-default: $black;
 
 [data-theme='light'] {
     --body-txt: #{$body-txt-theme1};
-
-    // --body-bg: url('../images/grunge2X.jpg');
     --body-bg: #{$body-bg-theme1};
+    --body-bg-img: url('/images/grunge2X.jpg');
     --site-header-bg: #{$site-header-bg-theme1};
     --site-footer-bg: #{$site-footer-bg-theme1};
     --site-footer-txt: #{$site-footer-txt-theme1};
