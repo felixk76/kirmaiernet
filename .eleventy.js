@@ -10,6 +10,8 @@ module.exports = config => {
 
     const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
     const svgContents = require("eleventy-plugin-svg-contents");
+    const pluginInlineCss = require('@navillus/eleventy-plugin-inline-css')
+
     config.addPlugin(eleventyNavigationPlugin);
     config.addPlugin(svgContents);
 
@@ -26,6 +28,15 @@ module.exports = config => {
           return "<div class='article-col"+column+"'>"+data+"</div>";
     });
 
+    config.addPlugin(pluginInlineCss, {
+        input: '/dist/', // look for all stylesheets relative to `./src/assets`
+        cleanCss: true, // disable clean-css
+        purgeCss: {
+          defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [], // custom CSS extractor used for PurgeCSS
+          whitelist: ["[data-theme='light']","[data-theme='dark']"],
+          rejected: true
+        }
+    })
 
     return {
         markdownTemplateEngine: 'njk',

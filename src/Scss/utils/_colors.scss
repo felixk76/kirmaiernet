@@ -1,3 +1,4 @@
+/* purgecss ignore */
 $white: #fff;
 $black: #000;
 $transparent: transparent;
@@ -62,6 +63,7 @@ $skills-list-item-border-default: $purple4;
 $skills-list-item-border-theme1: $purple4;
 $skills-list-item-bg-default: $black;
 
+/*! purgecss start ignore */
 [data-theme='dark'] {
     --body-txt: #{$body-txt-default};
 
@@ -100,3 +102,4 @@ $skills-list-item-bg-default: $black;
     --intro-image-bg: #{transparentize($grey1, 0.38)};
     --intro-image-bg: #{$intro-image-bg-theme1};
 }
+/*! purgecss end ignore */
