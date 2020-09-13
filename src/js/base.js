@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // here code
-
     const htmlEl = document.getElementsByTagName('html')[0];
     var themeToggle = document.querySelector('.color-scheme-toggle');
     // Capture the current theme from local storage and adjust the page to use the current theme.
