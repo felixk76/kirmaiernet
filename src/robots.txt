@@ -1,2 +1,4 @@
+Sitemap: https://www.kirmaier.net/sitemap.xml
+
 User-Agent: *
 Allow: /

@@ -4,6 +4,7 @@ layout: 'layouts/text.html'
 eleventyNavigation:
     key: about
 articleclass: 'article-2col'
+changeFreq: 'weekly'
 mainheadline: 'Über mich'
 ---
 {% articlefullwidth %}

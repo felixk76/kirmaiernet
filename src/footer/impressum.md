@@ -4,6 +4,7 @@ layout: 'layouts/text.html'
 eleventyNavigation:
     key: Impressum
     order: 1
+changeFreq: 'weekly'
 mainheadline: 'Impressum'
 
 address:

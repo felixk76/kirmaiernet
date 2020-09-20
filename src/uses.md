@@ -3,6 +3,7 @@ title: 'Felix Kirmaier - Frontend Developer - Uses'
 layout: 'layouts/text.html'
 eleventyNavigation:
     key: uses
+changeFreq: 'weekly'
 articleclass: 'article-2col uses'
 mainheadline: '/uses'
 ---

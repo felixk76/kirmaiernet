@@ -4,6 +4,7 @@ layout: 'layouts/text.html'
 eleventyNavigation:
     key: Datenschutz
     order: 2
+changeFreq: 'weekly'
 mainheadline: 'Datenschutz­erklärung'
 
 address:

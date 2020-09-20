@@ -3,7 +3,7 @@ title: 'Felix Kirmaier - Frontend Developer'
 layout: 'layouts/home.html'
 eleventyNavigation:
     key: Home
-
+changeFreq: 'weekly'
 intro:
     headline: 'Servus, ich bin der Felix'
 skillstitle: 'Was ich so beruflich mach:'
