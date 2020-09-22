@@ -3,6 +3,8 @@ title: 'Felix Kirmaier - Frontend Developer - Über mich'
 layout: 'layouts/text.html'
 eleventyNavigation:
     key: about
+    title: 'Über mich'
+    order: 20
 articleclass: 'article-2col'
 changeFreq: 'weekly'
 mainheadline: 'Über mich'

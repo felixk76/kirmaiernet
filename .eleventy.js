@@ -20,6 +20,11 @@ module.exports = config => {
           .getFilteredByGlob('./src/footer/*.md')
     });
 
+    config.addCollection("mainnav", collection => {
+        return collection
+            .getFilteredByGlob(['./src/*.md']);
+      });
+
     config.addPairedShortcode("articlefullwidth", function(data) {
           return "<div class='article-fullwidth'>"+data+"</div>";
     });

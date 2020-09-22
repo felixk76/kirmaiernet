@@ -1,4 +1,6 @@
 /* purgecss ignore */
+
+// Colors
 $white: #fff;
 $black: #000;
 $transparent: transparent;
@@ -13,7 +15,13 @@ $purple3: #32104c;
 $purple4: #ddb5ff;
 $purple5: #1c0b23;
 $purple6: #bfb4c8;
+$purple7: #ceadf7;
 $yellow1: #feb309;
+
+// Gradients
+$gradient1: linear-gradient(45deg, #5d4779 0, #ceadf7 50%, #5d4779 100%);
+$gradient2: linear-gradient(-4deg, #5d4779, #ceadf7);
+$gradient3: linear-gradient(-4deg, #ceadf7, #5d4779);
 
 // Basics
 $body-bg-default: $purple3;
@@ -28,9 +36,16 @@ $site-header-h1-txt: $grey2;
 $site-header-h1-shadow: $purple1;
 $site-header-h1-border: $purple2;
 $site-header-h2-txt: $purple1;
+$site-navigation-bg-default: $grey1;
+$site-navigation-text-gradient-default: $gradient2;
+$site-navigation-link-hover-default: $purple7;
+$site-navigation-link-divider-default: $purple1;
 
 // Site Header Theme1
 $site-header-bg-theme1: transparentize($grey1, 0.1);
+$site-navigation-text-gradient-theme1: $gradient3;
+$site-navigation-bg-theme1: $grey4;
+$site-navigation-link-hover-theme1: $purple1;
 
 // Site Footer
 $site-footer-bg-default: transparentize($grey1, 0.38);
@@ -55,6 +70,7 @@ $text-link-theme1: $purple1;
 // Intro
 $intro-image-bg-default: $purple5;
 $intro-image-bg-theme1: $purple3;
+$intro-image-border: $gradient1;
 
 // Skills
 $skills-bg-default: transparentize($grey3, 0.88);
@@ -83,6 +99,10 @@ $skills-list-item-bg-default: $black;
     --skills-list-item-txt: #{$skills-list-item-txt-default};
     --skills-list-item-border: #{$skills-list-item-border-default};
     --intro-image-bg: #{$intro-image-bg-default};
+    --site-navigation-text-gradient: #{$site-navigation-text-gradient-default};
+    --site-navigation-bg: #{$site-navigation-bg-default};
+    --site-navigation-link-hover: #{$site-navigation-link-hover-default};
+    --site-navigation-link-divider: #{$site-navigation-link-divider-default};
 }
 
 [data-theme='light'] {
@@ -102,5 +122,8 @@ $skills-list-item-bg-default: $black;
     --skills-list-item-border: #{$skills-list-item-border-theme1};
     --intro-image-bg: #{transparentize($grey1, 0.38)};
     --intro-image-bg: #{$intro-image-bg-theme1};
+    --site-navigation-bg: #{$site-navigation-bg-theme1};
+    --site-navigation-text-gradient: #{$site-navigation-text-gradient-theme1};
+    --site-navigation-link-hover: #{$site-navigation-link-hover-theme1};
 }
 /*! purgecss end ignore */

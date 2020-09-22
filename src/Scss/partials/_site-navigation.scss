@@ -1,0 +1,117 @@
+// Page Navigation
+.site-navigation {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--site-navigation-bg, $site-navigation-bg-default);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 300ms ease-in;
+
+    @include bp(large1) {
+        position: absolute;
+        left: auto;
+        top: 360px;
+        right: 20px;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+}
+
+.site-navigation-isopen {
+    overflow: hidden;
+
+    @include bp(large1) {
+        overflow: visible;
+    }
+
+    .site-navigation {
+        display: flex;
+        left: 0;
+
+        @include bp(large1) {
+            left: auto;
+        }
+    }
+}
+
+.site-navigation-list {
+    list-style-type: none;
+    font-family: 'BigNoodleTitling', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+
+    @include bp(large1) {
+        font-size: 25px;
+        transform: skewY(-3deg);
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 15px;
+        background: var(--site-navigation-text-gradient, $site-navigation-text-gradient-default);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include bp(large1) {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        &:hover {
+            background: none;
+            color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
+            background-clip: none;
+            -webkit-text-fill-color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
+
+            @include bp(large1) {
+                text-decoration: underline;
+                text-decoration-color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
+                text-underline-offset: 7px;
+                text-decoration-thickness: 3px;
+            }
+        }
+
+        &:after {
+            content: '';
+            width: 20px;
+            height: 3px;
+            display: block;
+            background-color: var(--site-navigation-link-divider, $site-navigation-link-divider-default);
+            margin: 10px auto;
+
+            @include bp(large1) {
+                display: none;
+            }
+        }
+
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+.site-navigation-close {
+    background: none;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 0;
+    fill: $purple1;
+
+    @include bp(large1) {
+        display: none;
+    }
+}

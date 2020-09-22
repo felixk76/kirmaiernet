@@ -3,6 +3,7 @@ title: 'Felix Kirmaier - Frontend Developer - Kolophon'
 layout: 'layouts/text.html'
 eleventyNavigation:
     key: Kolophon
+    order: 30
 changeFreq: 'weekly'
 articleclass: 'article-2col'
 mainheadline: 'Kolophon'

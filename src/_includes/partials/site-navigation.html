@@ -1,0 +1,10 @@
+<nav class="site-navigation">
+    {% set mainnav = collections.mainnav | eleventyNavigation %}
+    <button class="site-navigation-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs/><path d="M16 14.5L1.5 0 0 1.5 14.5 16 0 30.5 1.5 32 16 17.5 30.5 32l1.5-1.5L17.5 16 32 1.5 30.5 0 16 14.5z"/></svg>
+    </button>
+    <ul class="site-navigation-list">
+        {%- for entry in mainnav -%}
+        <li{% if entry.url == page.url %} class="my-active-class"{% endif %}><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>{%- endfor -%}
+    </ul>
+</nav>
