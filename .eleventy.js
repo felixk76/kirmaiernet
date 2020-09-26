@@ -38,7 +38,7 @@ module.exports = config => {
         cleanCss: true, // disable clean-css
         purgeCss: {
           defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [], // custom CSS extractor used for PurgeCSS
-          whitelist: ["[data-theme='light']","[data-theme='dark']"],
+          whitelist: ["[data-theme='light']","[data-theme='dark']","site-navigation-isopen"],
           rejected: true
         }
     })
