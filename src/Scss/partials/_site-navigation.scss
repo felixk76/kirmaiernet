@@ -107,7 +107,7 @@
     width: 40px;
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: env(safe-area-inset-left, 40px);
     border: 0;
     fill: $purple1;
 
