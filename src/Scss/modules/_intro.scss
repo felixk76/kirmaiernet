@@ -48,11 +48,6 @@
         max-height: 350px;
     }
 
-    // @include bp(1200px) {
-    //     max-width: 380px;
-    //     max-height: 380px;
-    // }
-
     @include bp(1350px) {
         grid-row: 1 / 4;
         max-width: 500px;

@@ -5,11 +5,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    // height: 40vw;
-    // min-height: 200px;
-    // max-height: 350px;
-    // margin-bottom: calc(20px + calc(( var(--clip-padding) * 2 ) - ( var(--clip-padding) - var(--skew-padding) )));
     margin-bottom: calc(20px + calc(var(--clip-padding) - var(--skew-padding)));
     background: var(--site-header-bg, $site-header-bg-default);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 5vw), 0 100%);
@@ -34,10 +29,6 @@
         transform: rotateZ(-3deg);
         transform-style: preserve-3d;
         backface-visibility: initial;
-
-        @include bp(600px) {
-            font-size: 70px;
-        }
 
         @include bp(medium1) {
             font-size: 70px;
