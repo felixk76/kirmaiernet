@@ -21,7 +21,7 @@
     "stylelint": "stylelint 'src/Scss/**/*.scss' --formatter verbose",
     "stylelint-fix": "stylelint 'src/Scss/**/*.scss'  --fix --formatter verbose",
     "stylelint-config": "stylelint 'srcScss/style.scss' --print-config",
-    "build": "npm i && grunt build && npx eleventy "
+    "build": "grunt build && npx eleventy "
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
