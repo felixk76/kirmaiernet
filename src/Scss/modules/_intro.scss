@@ -65,7 +65,7 @@
         background: var(--intro-image-bg, $intro-image-bg-default);
         border-radius: 50%;
         width: calc(100% - 10px);
-        height: auto;
+        height: calc(100% - 10px);
     }
 }
 
