@@ -99,6 +99,26 @@
             }
         }
     }
+
+    .site-navigation-active {
+        background: none;
+        color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
+        background-clip: none;
+        -webkit-text-fill-color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
+
+        @include bp(large1) {
+            text-decoration: none;
+        }
+
+        &:hover {
+            @include bp(large1) {
+                text-decoration: underline;
+                text-decoration-color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
+                text-underline-offset: 7px;
+                text-decoration-thickness: 3px;
+            }
+        }
+    }
 }
 
 .site-navigation-close {

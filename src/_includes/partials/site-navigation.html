@@ -5,6 +5,6 @@
     </button>
     <ul class="site-navigation-list">
         {%- for entry in mainnav -%}
-        <li{% if entry.url == page.url %} class="my-active-class"{% endif %}><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>{%- endfor -%}
+        <li{% if entry.url == page.url %} class="site-navigation-active"{% endif %}><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>{%- endfor -%}
     </ul>
 </nav>
