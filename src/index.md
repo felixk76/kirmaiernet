@@ -31,4 +31,4 @@ Die Erkenntnisse aus meiner täglichen Arbeit gebe ich seit Jahren in Agenturen,
 
 Über Fragen, Anregungen, Lob, Kritik oder ähnliches, per Mail oder Nachricht in den unten verlinkten Netzwerken freue ich mich sehr.
 
-<a href="./about/">Hier</a> erfährst Du mehr über mich, mein Setup habe ich auf meiner  <a href="./uses/">"/uses"-Seite</a> aufgelistet,
+<a href="./about/">Hier</a> erfährst Du mehr über mich, mein Setup habe ich auf meiner  <a href="./uses/">"/uses"-Seite</a> aufgelistet.

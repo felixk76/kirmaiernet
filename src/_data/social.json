@@ -2,7 +2,7 @@
     "items": [
         {
             "name": "Mail",
-            "url": "mailto:felix.kirmaier.net",
+            "url": "mailto:felix@kirmaier.net",
             "icon": "/src/Images/socialmedia/mail.svg"
         },
         {
