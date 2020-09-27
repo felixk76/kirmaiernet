@@ -16,6 +16,7 @@ $purple4: #ddb5ff;
 $purple5: #1c0b23;
 $purple6: #bfb4c8;
 $purple7: #ceadf7;
+$purple8: #13041f;
 $yellow1: #feb309;
 
 // Gradients
@@ -42,7 +43,7 @@ $site-navigation-link-hover-default: $purple7;
 $site-navigation-link-divider-default: $purple1;
 
 // Site Header Theme1
-$site-header-bg-theme1: transparentize($grey1, 0.1);
+$site-header-bg-theme1: $purple8;
 $site-navigation-text-gradient-theme1: $gradient3;
 $site-navigation-bg-theme1: $grey4;
 $site-navigation-link-hover-theme1: $purple1;
