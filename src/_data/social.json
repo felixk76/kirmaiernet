@@ -16,6 +16,11 @@
             "icon": "/src/Images/socialmedia/codepen.svg"
         },
         {
+            "name": "Github",
+            "url": "https://github.com/felixk76",
+            "icon": "/src/Images/socialmedia/github.svg"
+        },
+        {
             "name": "Xing",
             "url": "https://www.xing.com/profile/Felix_Kirmaier",
             "icon": "/src/Images/socialmedia/xing.svg"
