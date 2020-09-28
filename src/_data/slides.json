@@ -1,0 +1,24 @@
+{
+    "slides": [
+        {
+            "name": "Progressive Web Apps",
+            "url": "",
+            "status": "in progress"
+        },
+        {
+            "name": "Responsive Images",
+            "url": "/slides/responsive-images.pdf",
+            "status": "done"
+        },
+        {
+            "name": "RWD Workflow",
+            "url": "/slides/rwd-workflow.pdf",
+            "status": "done"
+        },
+        {
+            "name": "Progressive Enhancement",
+            "url": "/slides/progressive-enhancement.pdf",
+            "status": "done"
+        }
+    ]
+}
