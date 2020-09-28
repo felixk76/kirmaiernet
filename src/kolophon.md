@@ -26,7 +26,7 @@ Da ich schon länger mal neue Tools ausprobieren wollte und mich ohne Budgetzwan
 
 Wenn Du diesen Text jetzt liest ist es mir anscheinend auch gelungen.
 
-## Warum eine Website ? ##
+## Warum eine eigene Website ? ##
 
 Ich halte, mehr oder weniger, regelmäßig Vorträge bei Meetups und Barcamps, und im Anschluss fragt immer irgendwer nach den Slides. Den Slideshare Link über Twitter oder Mail rumzuschicken, finde ich da nur so semi-gut weil ein Tweet sehr flüchtig und die Links recht kryptisch sind, hinzu kommt dass ich ungern meinen eigenen Content auf irgendwelche fremde Plattformen hochlade. Aus dem gleichen Grund blogge ich zum Beispiel nicht auf Medium.
 
@@ -34,11 +34,11 @@ A propos bloggen: Ich habe für mich festgestellt, dass wenn ich einen Vortrag �
 
 ## Technik ##
 
-Die Website habe ich komplett mit <a href="https://www.11ty.dev" target="_blank" rel="noopener noreferer"> Eleventy</a> erstellt. Im Job haben wir in den vergangenen Jahren schon mit mehreren Static-Site-Generatoren (um HTML-Dummys zu erstellen) gearbeitet,aber bisher bin ich mit keinem wirklich warm geworden. Eleventy hingegen ist einfach, schnell und leicht konfigurierbar. Außerdem hängt nicht noch ein ganzer Rattenschwanz an Toolchain dran, sondern man kann diese selbst auswählen. In meiner engeren Auswahl wären auch Hugo und Gatsby gewesen, aber mich in go reinzufuchsen oder hier React zu verwenden erschien mir leicht übertrieben.
+Die Website habe ich komplett mit <a href="https://www.11ty.dev" target="_blank" rel="noopener noreferer"> Eleventy</a> erstellt. Im Job haben wir in den vergangenen Jahren schon mit mehreren Static-Site-Generatoren (um HTML-Dummys zu erstellen) gearbeitet, aber bisher bin ich mit keinem wirklich warm geworden. Eleventy hingegen ist einfach, schnell und leicht konfigurierbar. Außerdem hängt nicht noch ein ganzer Rattenschwanz an Toolchain dran, sondern man kann diese selbst auswählen. In meiner engeren Auswahl wären auch Hugo und Gatsby gewesen, aber mich in go reinzufuchsen oder hier React zu verwenden erschien mir leicht übertrieben.
 
-Für die CSS Generierung benutze ich wie sonst auch libsass und PostCSS, da es sich allerdings um eine statische Website handelt, habe ich erstmals PurgeCSS im Einsatz um auf der jeweiligen Seite nicht-verwendetes CSS zu entfernen. Es wird kein CSS Framework wie Bootstrap, Foundation oder TailwindCSS verwendet, da meiner Erfahrung nach mich diese zu sehr einschränken und ich mehr Zeit damit verbringe das Framework anzupassen als CSS zu erstellen. Die einzige Ausnahme ist der Bootstrap CSS Reboot den ich stark ausgedünnt eingebunden habe.
+Für die CSS Generierung benutze ich wie sonst auch libsass und PostCSS, da es sich allerdings um eine statische Website handelt, habe ich erstmals PurgeCSS im Einsatz um auf der jeweiligen Seite nicht-verwendetes CSS automatisch zu entfernen. Es wird kein CSS Framework wie Bootstrap, Foundation oder TailwindCSS verwendet, da meiner Erfahrung nach mich diese zu sehr einschränken und ich mehr Zeit damit verbringe das Framework anzupassen als CSS zu erstellen. Die einzige Ausnahme ist der Bootstrap CSS Reboot den ich stark ausgedünnt eingebunden habe.
 
-Javascript kommt (frontendseitig) nur sehr sparsam zum Einsatz, überwiegend ES6 also auch hier wieder kein Framework wie Vue,Angular oder React. Eleventy basiert auf NodeJS um die Seiten zu erzeugen, für den Serviceworker verwende ich Workbox.
+JavaScript kommt (frontendseitig) nur sehr sparsam zum Einsatz, überwiegend ES6 also auch hier wieder kein Framework wie Vue, Angular oder React. Eleventy basiert auf NodeJS um die Seiten zu erzeugen, für den Serviceworker verwende ich Workbox.
 
 Gehostet wird die Website bei <a href="https://www.mittwald.de" target="_blank" rel="noopener noreferer">Mittwald</a>.
 
@@ -48,14 +48,14 @@ Wie schon gesagt wollte ich Eleventy ausprobieren, aber es gibt auch noch andere
 
 <ol class="decimal">
 <li>Performance<br />
-Wer mich kennt weiß wie wichtig mir die Performance einer Website ist, und nicht warten zu müssen bis irgend ein Backend mit einer Datenbank das HTML zusammenstöpselt ist natürlich ein Geschwindigkeitsvorteil. Das soll aber nicht heißen dass man keine schnellen dynamischen Websites bauen kann (ich mach das schließlich beruflich jeden Tag).</li>
+Wer mich kennt weiß, wie wichtig mir die Performance einer Website ist und nicht warten zu müssen bis irgend ein Backend mit einer Datenbank das HTML zusammenstöpselt, ist natürlich ein Geschwindigkeitsvorteil. Das soll aber nicht heißen, dass man keine schnellen dynamischen Websites bauen kann (ich mach das schließlich beruflich jeden Tag).</li>
 
 
 <li>Wartung<br />
 Je weniger bewegliche Teile eine Website hat um so weniger kann schief gehen und desto weniger muss gestestet, geupdated und abgesichert werden.</li>
 
 <li>Pragmatismus<br />
-Ich bin froh wenn das Frontend so funktioniert und aussieht wie es soll, ohne mir Gedanken über die Anbindung an ein CMS machen zu müssen, was ich zwar könnte aber ein unnötiger Mehraufwand wäre.  Da ich mühelos die Seiten aus Markdown erstellen und deployen kann brauche ich auch kein TYPO3 oder Wordpress um mich dabei zu unterstützen.</li>
+Ich bin froh, wenn das Frontend so funktioniert und aussieht wie es soll, ohne mir Gedanken über die Anbindung an ein CMS machen zu müssen, was ich zwar könnte aber ein unnötiger Mehraufwand wäre. Da ich mühelos die Seiten aus Markdown erstellen und deployen kann brauche ich auch dafür kein TYPO3 oder Wordpress zur Unterstützung.</li>
 
 ## Design ##
 
@@ -74,7 +74,7 @@ Die Icons stammen aus verschiedenen Iconsets, die ich bei <a href="https://icomo
 
 ## Danke ##
 
-Allen Entwickler die in ihrer Freizeit unentgeltlich an Open Source Projekten arbeiten um das Internet zu verbessern
+Allen Entwicklern die in ihrer Freizeit unentgeltlich an Open Source Projekten arbeiten um das Internet zu verbessern.
 
 Melanie, die mir den nötigen Arschritt gegeben hat, endlich mal meine Website fertigzustellen.
 
@@ -82,7 +82,7 @@ Stäffi, die mir immer bei textlichen oder konzeptionellen Problemen weiterhilft
 
 und ganz besonderen Dank an:
 
-Isabel, die mich die ganze Zeit über erträgt auch wenn ich nicht an Websites bastle, sich meine ratlosen, verzweifelten oder wütenden Monologe über irgendwelche unwichtigen Javascript Probleme anhört, und mir in allen Lebenslagen mit Geduld, Liebe, Rat und Tat zur Seite steht.
+Isabel, die mich die ganze Zeit über erträgt auch wenn ich nicht an Websites bastle, sich meine ratlosen, verzweifelten oder wütenden Monologe über irgendwelche unwichtigen JavaScript Probleme anhört, und mir in allen Lebenslagen mit Geduld, Liebe, Rat und Tat zur Seite steht.
 
 {% endarticlefullwidth %}
 

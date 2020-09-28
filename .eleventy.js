@@ -2,6 +2,7 @@ module.exports = config => {
     // Set directories to pass through to the dist folder
     config.addPassthroughCopy('./src/Images/');
     config.addPassthroughCopy('./src/Fonts/');
+    config.addPassthroughCopy('./src/slides/');
     config.addPassthroughCopy('./src/*.ico');
     config.addPassthroughCopy('./src/*.png');
     config.addPassthroughCopy('./src/browserconfig.xml');
@@ -23,7 +24,7 @@ module.exports = config => {
     config.addCollection("mainnav", collection => {
         return collection
             .getFilteredByGlob(['./src/*.md']);
-      });
+    });
 
     config.addPairedShortcode("articlefullwidth", function(data) {
           return "<div class='article-fullwidth'>"+data+"</div>";
