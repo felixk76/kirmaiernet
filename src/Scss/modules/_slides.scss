@@ -14,9 +14,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border: 0;
             border-bottom: 2px solid;
             border-image-slice: 1;
-            border-image-source: linear-gradient(45deg, #ceadf7, #5d4779, #ceadf7, #5d4779);
+            border-image-source: $slides-border-gradient;
             margin-bottom: 1.05rem;
 
             &:first-child {

@@ -23,6 +23,7 @@ $yellow1: #feb309;
 $gradient1: linear-gradient(45deg, #5d4779 0, #ceadf7 50%, #5d4779 100%);
 $gradient2: linear-gradient(-4deg, #5d4779, #ceadf7);
 $gradient3: linear-gradient(-4deg, #ceadf7, #5d4779);
+$gradient4: linear-gradient(45deg, #5d4779, #ceadf7, #5d4779);
 
 // Basics
 $body-bg-default: $purple3;
@@ -77,6 +78,9 @@ $intro-image-border: $gradient1;
 $error-code-txt: $grey2;
 $error-code-bg: $purple5;
 $error-code-border: $gradient1;
+
+// Slides
+$slides-border-gradient: $gradient4;
 
 // Skills
 $skills-bg-default: transparentize($grey3, 0.88);
