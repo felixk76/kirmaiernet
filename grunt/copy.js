@@ -10,6 +10,8 @@ module.exports = {
             'lazysizes/lazysizes.js',
             'fg-loadcss/dist/cssrelpreload.js',
             'intersection-observer/intersection-observer.js',
+            'instant.page/instantpage.js'
+
         ],
         dest: '<%= basePaths.jsVendors %>'
     }
