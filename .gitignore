@@ -7,3 +7,4 @@ dist/
 src/fonts/original/
 material/
 src/Scss/modules/_skills.scss
+src/js/vendors/*.js
