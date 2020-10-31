@@ -7,6 +7,8 @@ module.exports = config => {
     config.addPassthroughCopy('./src/browserconfig.xml');
     config.addPassthroughCopy('./src/*.webmanifest');
     config.addPassthroughCopy('./src/robots.txt');
+    config.addPassthroughCopy('./src/js/vendors/**/*');
+
 
     const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
     const svgContents = require("eleventy-plugin-svg-contents");
@@ -34,11 +36,11 @@ module.exports = config => {
     });
 
     config.addPlugin(pluginInlineCss, {
-        input: '/dist/', // look for all stylesheets relative to `./src/assets`
-        cleanCss: true, // disable clean-css
+        input: '/dist/',
+        cleanCss: true,
         purgeCss: {
-          defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [], // custom CSS extractor used for PurgeCSS
-          whitelist: ["[data-theme='light']","[data-theme='dark']"],
+          defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+          whitelist: ["[data-theme='light']","[data-theme='dark']","site-navigation-isopen"],
           rejected: true
         }
     })
