@@ -17,12 +17,15 @@
     "eslint-fix": "eslint . --fix",
     "eslint-nibble": "eslint-nibble .",
     "preinstall": "npx npm-force-resolutions",
+    "postinstall": "npm run workbox-copy",
     "start": "npx eleventy --serve",
     "stylelint-find-rules": "stylelint-find-new-rules",
     "stylelint": "stylelint 'src/Scss/**/*.scss' --formatter verbose",
     "stylelint-fix": "stylelint 'src/Scss/**/*.scss'  --fix --formatter verbose",
     "stylelint-config": "stylelint 'srcScss/style.scss' --print-config",
-    "build": "grunt build && npx eleventy "
+    "build": "grunt build && npx eleventy ",
+    "workbox-copy": "workbox copyLibraries src/js/vendors/",
+    "workbox-inject": "workbox injectManifest workbox-config.js"
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
@@ -71,7 +74,9 @@
     "instant.page": "^5.1.0",
     "intersection-observer": "^0.11.0",
     "lazysizes": "^5.2.0",
-    "picturefill": "^3.0.3"
+    "picturefill": "^3.0.3",
+    "workbox-build": "^5.1.4",
+    "workbox-cli": "^5.1.4"
   },
   "optionalDependencies": {
     "eslint-nibble": "^5.1.0",

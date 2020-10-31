@@ -9,6 +9,13 @@
     <meta name="description" content="{{site.description}}">
     <title>{{ title }}</title>
     <link rel="canonical" href="{{site.root}}{{page.url}}">
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js');
+          });
+        }
+    </script>
     <link rel="stylesheet" href="/css/style.min.css" />
     <script src="/js/base.min.js" defer ></script>
 
