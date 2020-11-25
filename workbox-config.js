@@ -10,7 +10,8 @@ module.exports = {
         'favicon-16x16.png',
         'js/base.min.js',
         'js/instantpage.min.js',
+        'offline/index.html'
     ],
-    'swDest': 'dist/sw.js',
-    'swSrc': 'src/sw.js'
+    'swDest': 'src/sw.js',
+    'swSrc': 'src/sw-template.js'
 };

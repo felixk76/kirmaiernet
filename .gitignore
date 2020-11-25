@@ -1,3 +1,4 @@
+.cache/
 .DS_Store
 .vscode
 .history
@@ -9,3 +10,4 @@ material/
 src/Scss/modules/_skills.scss
 src/js/vendors/**/*.js
 src/js/vendors/workbox-v5.1.4/
+src/sw.js
