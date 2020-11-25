@@ -1,7 +1,7 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Repository for my personal page www.kirmaier.net",
   "main": ".eleventy.js",
   "repository": {
     "type": "git",
@@ -13,15 +13,24 @@
   "homepage": "https://bitbucket.org/felixkirmaier/website#readme",
   "scripts": {
     "copyjs": "grunt copy:vendorJS",
+    "build:dev": "npm run-s workbox-inject parcel:dev eleventy",
+    "build:prod": "npm run-s workbox-inject parcel:prod eleventy",
+    "eleventy": "eleventy --serve --quiet",
     "eslint": "eslint .",
     "eslint-fix": "eslint . --fix",
     "eslint-nibble": "eslint-nibble .",
+    "parcel:dev": "NODE_ENV=development parcel build src/sw.js --no-minify",
+    "parcel:prod": "NODE_ENV=production parcel build src/sw.js --no-source-maps",
+    "preinstall": "npx npm-force-resolutions",
+    "postinstall": "npm run workbox-copy",
     "start": "npx eleventy --serve",
     "stylelint-find-rules": "stylelint-find-new-rules",
     "stylelint": "stylelint 'src/Scss/**/*.scss' --formatter verbose",
     "stylelint-fix": "stylelint 'src/Scss/**/*.scss'  --fix --formatter verbose",
     "stylelint-config": "stylelint 'srcScss/style.scss' --print-config",
-    "build": "npm i && grunt build && npx eleventy "
+    "build": "grunt build && npm run build:prod",
+    "workbox-copy": "workbox copyLibraries src/js/vendors/",
+    "workbox-inject": "workbox injectManifest workbox-config.js"
   },
   "devDependencies": {
     "@11ty/eleventy-navigation": "^0.1.6",
@@ -29,7 +38,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "buffer-crc32": "^0.2.13",
-    "eslint-config-se-es5": "git+ssh://git@bitbucket.org/saint-elmos/eslint-config-se-es5.git",
+    "eslint-config-felixk76": "^1.0.14",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
@@ -41,11 +50,9 @@
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-eslint": "^23.0.0",
-    "grunt-htmllint": "git+https://git@github.com/fkirmaier-saintelmos/grunt-htmllint.git",
     "grunt-notify": "^0.4.5",
     "grunt-nunjucks-2-html": "^3.1.0",
     "grunt-postcss": "^0.9.0",
-    "grunt-prettify": "git+https://git@github.com/fkirmaier-saintelmos/grunt-prettify.git",
     "grunt-rsync": "^3.0.0",
     "grunt-sass": "^3.1.0",
     "grunt-stylelint": "^0.15.0",
@@ -54,12 +61,13 @@
     "iltorb": "^2.4.4",
     "load-grunt-config": "^3.0.1",
     "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5",
     "nunjucks": "^3.2.2",
     "postcss": "^7.0.32",
     "postcss-critical-split": "^2.5.3",
     "postcss-pxtorem": "^5.1.1",
     "stylelint": "^13.6.1",
-    "stylelint-config-se": "git+ssh://git@bitbucket.org/saint-elmos/stylelint-config-se.git",
+    "stylelint-config-felixk76": "0.0.1",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0",
     "time-grunt": "^2.0.0"
@@ -68,10 +76,18 @@
     "@11ty/eleventy": "^0.11.0",
     "@navillus/eleventy-plugin-inline-css": "^1.0.3",
     "eleventy-plugin-svg-contents": "^0.7.0",
+    "eslint-nibble": "^5.1.0",
     "fg-loadcss": "^3.1.0",
+    "husky": "^4.2.5",
+    "instant.page": "^5.1.0",
     "intersection-observer": "^0.11.0",
     "lazysizes": "^5.2.0",
-    "picturefill": "^3.0.3"
+    "lint-staged": "^10.2.11",
+    "mrm": "^2.3.3",
+    "picturefill": "^3.0.3",
+    "stylelint-find-new-rules": "^2.0.0",
+    "workbox-build": "^5.1.4",
+    "workbox-cli": "^5.1.4"
   },
   "optionalDependencies": {
     "eslint-nibble": "^5.1.0",
@@ -90,5 +106,8 @@
     "not ie > 0",
     "not ie_mob > 0",
     "> 5%"
-  ]
+  ],
+  "resolutions": {
+    "lodash": "4.17.20"
+  }
 }

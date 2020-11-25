@@ -3,12 +3,19 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover"/>
     <meta name="referrer" content="no-referrer">
     <meta name="generator" content="{{site.generator}}">
     <meta name="description" content="{{site.description}}">
     <title>{{ title }}</title>
     <link rel="canonical" href="{{site.root}}{{page.url}}">
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js');
+          });
+        }
+    </script>
     <link rel="stylesheet" href="/css/style.min.css" />
     <script src="/js/base.min.js" defer ></script>
 
@@ -21,6 +28,7 @@
     <meta name="application-name" content="kirmaier.net">
     <meta name="msapplication-TileColor" content="#32104c">
     <meta name="theme-color" content="#32104c">
+    <script src="/js/instantpage.min.js" type="module" defer></script>
 
 
 </head>

@@ -2,7 +2,7 @@
     "items": [
         {
             "name": "Mail",
-            "url": "mailto:felix.kirmaier.net",
+            "url": "mailto:felix@kirmaier.net",
             "icon": "/src/Images/socialmedia/mail.svg"
         },
         {
@@ -14,6 +14,11 @@
             "name": "Codepen",
             "url": "https://codepen.io/felixk76/",
             "icon": "/src/Images/socialmedia/codepen.svg"
+        },
+        {
+            "name": "Github",
+            "url": "https://github.com/felixk76",
+            "icon": "/src/Images/socialmedia/github.svg"
         },
         {
             "name": "Xing",

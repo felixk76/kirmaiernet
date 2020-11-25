@@ -1,0 +1,13 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    <article class="text {% if articleclass %} {{articleclass}} {% endif %}">
+        <div class="error">
+            <div class="error-innerwrap">
+                <span>404</span>
+            </div>
+        </div>
+        <h1>{{mainheadline}} </h1>
+        {{ content | safe }}
+    </article>
+{% endblock %}

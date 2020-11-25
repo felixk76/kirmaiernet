@@ -4,11 +4,10 @@ module.exports = function(grunt) {
     require('load-grunt-config')(grunt, {
         data: {
             basePaths: {
-                providerext: 'extensions/lra_sitepackage/',
                 scss: 'src/Scss/',
                 css: 'dist/Css/',
                 js: 'dist/js/',
-                jsVendors: 'src/Private/js/vendors/',
+                jsVendors: 'src/js/vendors/',
                 jsPrivate: 'src/js/',
                 html: 'dist/Html/',
                 nunjucks: 'src/Nunjucks/',

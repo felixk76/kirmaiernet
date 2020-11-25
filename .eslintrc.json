@@ -1,5 +1,5 @@
 {
     "extends": [
-        "eslint-config-se-es5"
+        "eslint-config-felixk76"
     ]
 }

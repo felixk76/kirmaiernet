@@ -11,7 +11,7 @@ mainheadline: '/uses'
 ---
 {% articlefullwidth %}
 
-Wes Bos hat vor einiger Zeit Entwickler auf der ganzen Welt aufgerufen auf <a href="https://uses.tech/" target="_blank" rel="noopener noreferer">uses.tech</a> ihr Hardware Setup, verwendete Software und sonstige Arbeitsmittel aufzulisten.
+Wes Bos hat vor einiger Zeit Entwickler auf der ganzen Welt auf <a href="https://uses.tech/" target="_blank" rel="noopener noreferer">uses.tech</a>  aufgerufen  ihr Hardware Setup, verwendete Software und sonstige Arbeitsmittel aufzulisten.
 
 Herausgekommen ist dabei ein umfangreiches Verzeichnis der unterschiedlichsten Konfigurationen.
 
@@ -42,7 +42,7 @@ Mit den Monitoren von Dell bin ich sehr zufrieden. 24 Zoll ist (für mich) auch 
 {% endarticlecolumn %}
 {% articlecolumn 2 %}
 
-Tut was sie soll und die Touchgesten sind ein nettes Feature, allerdings benutze ich auch überwiegend die Tastatur.
+Tut was sie soll und die Touchgesten sind ein nettes Feature, allerdings benutze ich überwiegend die Tastatur.
 
 {% endarticlecolumn %}
 {% articlecolumn "1" %}
@@ -85,7 +85,7 @@ Auch hier habe ich schon öfter gewechselt und über längere Zeit benutzt (Coda
 {% endarticlecolumn %}
 {% articlecolumn 2 %}
 
-Als Frontend Developer spielt sich ein Großteil meiner Arbeit in Browsern und deren Dev-Tools ab. Jeder der drei Browsern hat seine Stärken und Schwächen.
+Als Frontend Developer spielt sich ein Großteil meiner Arbeit in Browsern und deren Dev-Tools ab. Jeder der drei Browser hat seine Stärken und Schwächen.
 
 Im Internet surfe ich  am Macbook meist mit Chrome und auf dem iPhone und iPad (notgezwungenermaßen) mit Safari.
 
@@ -95,7 +95,7 @@ Im Internet surfe ich  am Macbook meist mit Chrome und auf dem iPhone und iPad (
 {% endarticlecolumn %}
 {% articlecolumn 2 %}
 
-Ich bin sicher kein iTerm Poweruser, und nutze die vielen Features die es bietet nicht mal ansatzweise aus.
+Ich bin sicher kein iTerm Poweruser, und nutze die vielen Features die es bietet nur ansatzweise aus.
 
 {% endarticlecolumn %}
 
@@ -104,7 +104,7 @@ Ich bin sicher kein iTerm Poweruser, und nutze die vielen Features die es bietet
 {% endarticlecolumn %}
 {% articlecolumn 2 %}
 
-Alfred verwende ich für viele kleine Tasks wie z.B als Taschenrechner oder um Laufwerke auszuwerfen. Ich hab immer das Gefühl Alfreds Möglichkeiten nicht mal annähernd voll auszuschöpfen, wenn das überhaupt möglich ist.
+Alfred verwende ich für viele kleine Tasks wie z.B. als Taschenrechner oder um Laufwerke auszuwerfen. Ich hab immer das Gefühl Alfreds Möglichkeiten nicht mal annähernd voll auszuschöpfen, falls das überhaupt möglich ist.
 
 {% endarticlecolumn %}
 {% articlecolumn "1" %}
@@ -120,7 +120,7 @@ Für UI-Design, Icons oder einfache SVGs mein Lieblingsprogramm. Der Quellcode d
 {% endarticlecolumn %}
 {% articlecolumn 2 %}
 
-Inzwischen gibt es zwar Alternativen, aber da ich mich mit den Adobe Tools sehr gut auskenne, für mich immer noch die erste Wahl
+Inzwischen gibt es zwar Alternativen, aber da ich mich mit den Adobe Tools sehr gut auskenne, für mich immer noch die erste Wahl.
 
 {% endarticlecolumn %}
 
@@ -132,7 +132,7 @@ Inzwischen gibt es zwar Alternativen, aber da ich mich mit den Adobe Tools sehr 
 
 {% articlecolumn 2 %}
 
-Ich gebe zu ich habe eine große Schwäche für schönes Schreibgerät. Dieser wunderschöne Tintenroller aus Aluminium ist mein momentaner Liebling und ständiger Begleiter.
+Ich gebe zu, ich habe eine große Schwäche für schönes Schreibgerät. Dieser wunderschöne Tintenroller aus Aluminium ist mein momentaner Liebling und ständiger Begleiter.
 
 {% endarticlecolumn %}
 {% articlecolumn "1" %}
@@ -152,7 +152,7 @@ Mein Lamy Tripen hat mir bereits auf dem Gymnasium und im Studium treue Dienste 
 
 {% articlecolumn 2 %}
 
-Mein treuer Begleiter mit dem ich außer telefonieren alles mache (z.B lesen, Musik hören, spielen, chatten surfen).
+Mein treuer Begleiter mit dem ich außer telefonieren alles mache (z.B. lesen, Musik hören, spielen, chatten und surfen).
 
 {% endarticlecolumn %}
 {% articlecolumn "1" %}
@@ -161,7 +161,7 @@ Mein treuer Begleiter mit dem ich außer telefonieren alles mache (z.B lesen, Mu
 
 {% articlecolumn 2 %}
 
-Mein absolutes Lieblingsdevice! Komischerweise ist damit im Web zu surfen ein ganz anderes "Erlebnis" als am Rechner oder Smartphone. Ich empfinde Webseiten auf dem iPad irgendwie viel haptischer und immersiver. Irgendwie sehr schwer zu beschreiben, man muss es vermutlich ausprobieren, um es zu verstehen.
+Mein absolutes Lieblingsdevice! Komischerweise ist damit im Web zu surfen ein ganz anderes "Erlebnis" als am Rechner oder Smartphone. Ich empfinde Webseiten auf dem iPad irgendwie viel haptischer und immersiver. Es ist  schwer zu beschreiben, man muss es vermutlich ausprobieren, um es zu verstehen.
 
 Notieren und zeichnen mit dem Apple Pencil, oder an einem lauen Sommerabend Netflix auf dem Balkon genießen ist mit dem iPad einfach traumhaft.
 

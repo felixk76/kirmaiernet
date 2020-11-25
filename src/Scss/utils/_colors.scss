@@ -16,12 +16,14 @@ $purple4: #ddb5ff;
 $purple5: #1c0b23;
 $purple6: #bfb4c8;
 $purple7: #ceadf7;
+$purple8: #13041f;
 $yellow1: #feb309;
 
 // Gradients
 $gradient1: linear-gradient(45deg, #5d4779 0, #ceadf7 50%, #5d4779 100%);
 $gradient2: linear-gradient(-4deg, #5d4779, #ceadf7);
 $gradient3: linear-gradient(-4deg, #ceadf7, #5d4779);
+$gradient4: linear-gradient(45deg, #5d4779, #ceadf7, #5d4779);
 
 // Basics
 $body-bg-default: $purple3;
@@ -42,7 +44,7 @@ $site-navigation-link-hover-default: $purple7;
 $site-navigation-link-divider-default: $purple1;
 
 // Site Header Theme1
-$site-header-bg-theme1: transparentize($grey1, 0.1);
+$site-header-bg-theme1: $purple8;
 $site-navigation-text-gradient-theme1: $gradient3;
 $site-navigation-bg-theme1: $grey4;
 $site-navigation-link-hover-theme1: $purple1;
@@ -72,6 +74,14 @@ $intro-image-bg-default: $purple5;
 $intro-image-bg-theme1: $purple3;
 $intro-image-border: $gradient1;
 
+// Error
+$error-code-txt: $grey2;
+$error-code-bg: $purple5;
+$error-code-border: $gradient1;
+
+// Slides
+$slides-border-gradient: $gradient4;
+
 // Skills
 $skills-bg-default: transparentize($grey3, 0.88);
 $skills-list-item-txt-default: $grey4;
@@ -84,7 +94,7 @@ $skills-list-item-bg-default: $black;
 [data-theme='dark'] {
     --body-txt: #{$body-txt-default};
     --body-bg: #{$body-bg-default};
-    --body-bg-img: url('/images/grunge-dark.jpg');
+    --body-bg-img: url('/Images/grunge-dark.jpg');
 
     // --body-bg: url('../images/grunge_purple2.jpg');
     --site-header-bg: #{$site-header-bg-default};
@@ -108,7 +118,7 @@ $skills-list-item-bg-default: $black;
 [data-theme='light'] {
     --body-txt: #{$body-txt-theme1};
     --body-bg: #{$body-bg-theme1};
-    --body-bg-img: url('/images/grunge2X.jpg');
+    --body-bg-img: url('/Images/grunge2X.jpg');
     --site-header-bg: #{$site-header-bg-theme1};
     --site-footer-bg: #{$site-footer-bg-theme1};
     --site-footer-txt: #{$site-footer-txt-theme1};

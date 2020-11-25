@@ -1,5 +1,5 @@
 {
-  "extends": ["stylelint-config-se"],
+  "extends": ["stylelint-config-felixk76"],
   "ignoreFiles": [
     "src/Scss/vendors/*.scss"
   ],
