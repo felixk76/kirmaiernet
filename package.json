@@ -13,9 +13,10 @@
   "homepage": "https://bitbucket.org/felixkirmaier/website#readme",
   "scripts": {
     "copyjs": "grunt copy:vendorJS",
-    "build:dev": "npm run-s workbox-inject parcel:dev eleventy",
-    "build:prod": "npm run-s workbox-inject parcel:prod eleventy",
-    "eleventy": "eleventy --serve --quiet",
+    "build:dev": "npm run-s eleventy workbox-inject parcel:dev",
+    "build:prod": "npm run-s eleventy workbox-inject parcel:prod",
+    "eleventy:dev": "eleventy --serve",
+    "eleventy:prod": "eleventy",
     "eslint": "eslint .",
     "eslint-fix": "eslint . --fix",
     "eslint-nibble": "eslint-nibble .",
