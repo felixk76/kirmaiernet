@@ -1,8 +1,8 @@
 module.exports = {
     'globDirectory': 'dist/',
     'globPatterns': [
-        'Fonts/bignoodletitling.woff2',
-        'Fonts/manrope-variable-subset.woff2',
+        'fonts/bignoodletitling.woff2',
+        'fonts/manrope-variable-subset.woff2',
         'Images/intro/intro_500.webp',
         'Images/grunge-dark.jpg',
         'Images/grunge2X.jpg',

@@ -1,14 +1,14 @@
 module.exports = config => {
     // Set directories to pass through to the dist folder
     config.addPassthroughCopy('./src/Images/');
-    config.addPassthroughCopy('./src/Fonts/');
+    config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/slides/');
     config.addPassthroughCopy('./src/*.ico');
     config.addPassthroughCopy('./src/*.png');
     config.addPassthroughCopy('./src/browserconfig.xml');
     config.addPassthroughCopy('./src/*.webmanifest');
     config.addPassthroughCopy('./src/robots.txt');
-    config.addPassthroughCopy('./src/js/vendors/**/*');
+    config.addPassthroughCopy('./src/js/**/*');
 
 
     const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
