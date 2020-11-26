@@ -8,7 +8,8 @@ module.exports = config => {
     config.addPassthroughCopy('./src/browserconfig.xml');
     config.addPassthroughCopy('./src/*.webmanifest');
     config.addPassthroughCopy('./src/robots.txt');
-    config.addPassthroughCopy('./src/js/**/*');
+    config.addPassthroughCopy('./src/js/vendors/**/*');
+    config.addPassthroughCopy('./src/js/instantpage.min.js');
 
 
     const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');

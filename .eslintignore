@@ -6,3 +6,4 @@ vendor/**/*.js
 
 !src/js/**/*.js
 src/js/vendors/**/*.js
+src/js/instantpage.min.js
