@@ -25,11 +25,6 @@
         fill: var(--site-footer-socialmedia, $site-footer-socialmedia-default);
         transition: fill 300ms ease-out;
 
-        @include bp(medium1) {
-            padding: 5px;
-            margin: 0 20px;
-        }
-
         &:hover {
             fill: var(--site-footer-socialmedia-hover, $site-footer-socialmedia-hover-default);
         }
