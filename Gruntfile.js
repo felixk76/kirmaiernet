@@ -5,7 +5,7 @@ module.exports = function(grunt) {
         data: {
             basePaths: {
                 scss: 'src/Scss/',
-                css: 'dist/Css/',
+                css: 'dist/css/',
                 js: 'dist/js/',
                 jsVendors: 'src/js/vendors/',
                 jsPrivate: 'src/js/',

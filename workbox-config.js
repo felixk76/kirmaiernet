@@ -1,6 +1,7 @@
 module.exports = {
     'globDirectory': 'dist/',
     'globPatterns': [
+        'css/style.min.css',
         'fonts/bignoodletitling.woff2',
         'fonts/manrope-variable-subset.woff2',
         'Images/intro/intro_500.webp',
