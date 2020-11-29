@@ -14,7 +14,7 @@
   "scripts": {
     "copyjs": "grunt copy:vendorJS",
     "build:dev": "npm run eleventy:dev && npm run workbox-inject && npm run parcel:dev",
-    "build:prod": "npm run eleventy:prod && npm run workbox-inject && npm run parcel:prod",
+    "build:prod": "npm run eleventy:prod && npm run workbox-inject && npm run parcel:prod && workbox copyLibraries dist/js/vendors/",
     "eleventy:dev": "eleventy --serve",
     "eleventy:prod": "eleventy",
     "eslint": "eslint .",
