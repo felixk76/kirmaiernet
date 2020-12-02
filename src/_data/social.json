@@ -3,27 +3,27 @@
         {
             "name": "Mail",
             "url": "mailto:felix@kirmaier.net",
-            "icon": "/src/Images/socialmedia/mail.svg"
+            "icon": "/src/images/socialmedia/mail.svg"
         },
         {
             "name": "Twitter",
             "url": "https://twitter.com/felixk76",
-            "icon": "/src/Images/socialmedia/twitter.svg"
+            "icon": "/src/images/socialmedia/twitter.svg"
         },
         {
             "name": "Codepen",
             "url": "https://codepen.io/felixk76/",
-            "icon": "/src/Images/socialmedia/codepen.svg"
+            "icon": "/src/images/socialmedia/codepen.svg"
         },
         {
             "name": "Github",
             "url": "https://github.com/felixk76",
-            "icon": "/src/Images/socialmedia/github.svg"
+            "icon": "/src/images/socialmedia/github.svg"
         },
         {
             "name": "Xing",
             "url": "https://www.xing.com/profile/Felix_Kirmaier",
-            "icon": "/src/Images/socialmedia/xing.svg"
+            "icon": "/src/images/socialmedia/xing.svg"
         }
     ]
 }

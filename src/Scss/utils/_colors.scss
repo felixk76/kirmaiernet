@@ -94,7 +94,7 @@ $skills-list-item-bg-default: $black;
 [data-theme='dark'] {
     --body-txt: #{$body-txt-default};
     --body-bg: #{$body-bg-default};
-    --body-bg-img: url('/Images/grunge-dark.jpg');
+    --body-bg-img: url('/images/grunge-dark.jpg');
 
     // --body-bg: url('../images/grunge_purple2.jpg');
     --site-header-bg: #{$site-header-bg-default};
@@ -118,7 +118,7 @@ $skills-list-item-bg-default: $black;
 [data-theme='light'] {
     --body-txt: #{$body-txt-theme1};
     --body-bg: #{$body-bg-theme1};
-    --body-bg-img: url('/Images/grunge2X.jpg');
+    --body-bg-img: url('/images/grunge2X.jpg');
     --site-header-bg: #{$site-header-bg-theme1};
     --site-footer-bg: #{$site-footer-bg-theme1};
     --site-footer-txt: #{$site-footer-txt-theme1};
