@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover"/>
-    <meta name="referrer" content="no-referrer">
-    <meta name="generator" content="{{site.generator}}">
-    <meta name="description" content="{{site.description}}">
     <title>{{ title }}</title>
     <link rel="canonical" href="{{site.root}}{{page.url}}">
     <script>
@@ -20,7 +17,9 @@
     <link rel="preload" href="/fonts/manrope-variable-subset.woff2" as="font">
     <link rel="stylesheet" href="/css/style.min.css" />
     <script src="/js/base.min.js" defer ></script>
-
+    <meta name="referrer" content="no-referrer">
+    <meta name="generator" content="{{site.generator}}">
+    <meta name="description" content="{{site.description}}">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -30,6 +29,16 @@
     <meta name="application-name" content="kirmaier.net">
     <meta name="msapplication-TileColor" content="#32104c">
     <meta name="theme-color" content="#32104c">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:site_name" content="kirmaier.net">
+    <meta property="og:url" content="{{site.root}}{{page.url}}">
+    <meta property="og:description" content="{{site.description}}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{site.root}}/images/ogimage.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{title}}">
 </head>
 
 <body>
