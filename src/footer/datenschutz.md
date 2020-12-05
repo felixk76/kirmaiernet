@@ -369,4 +369,5 @@ Ich bediene mich externer Dienstleister (Auftragsverarbeiter) z. B. für das Web
 
 Ich arbeite mit folgenden Dienstleistern zusammen:
 
-- Website- und E-Mail-Hosting: Mittwald CM Service GmbH & Co. KG, Königsberger&nbsp;Straße&nbsp;4-6, 32339&nbsp;Espelkamp, Deutschland
+- Website-Hosting: Netlify Inc., located at 2325 3rd Street, Suite 296, San Francisco, California 94107, USA
+- E-Mail-Hosting: Mittwald CM Service GmbH & Co. KG, Königsberger&nbsp;Straße&nbsp;4-6, 32339&nbsp;Espelkamp, Deutschland

@@ -40,7 +40,7 @@ Für die CSS Generierung benutze ich wie sonst auch libsass und PostCSS, da es s
 
 JavaScript kommt (frontendseitig) nur sehr sparsam zum Einsatz, überwiegend ES6 also auch hier wieder kein Framework wie Vue, Angular oder React. Eleventy basiert auf NodeJS um die Seiten zu erzeugen, für den Serviceworker verwende ich Workbox.
 
-Gehostet wird die Website bei <a href="https://www.mittwald.de" target="_blank" rel="noopener noreferer">Mittwald</a>.
+Gehostet wird die Website bei <a href="https://www.netlify.com" target="_blank" rel="noopener noreferer">Netlify</a>.
 
 ### Warum eine statische Website ? ###
 
