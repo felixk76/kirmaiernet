@@ -4,6 +4,9 @@ import { registerRoute, setDefaultHandler, setCatchHandler } from 'workbox-routi
 import { CacheFirst, NetworkFirst, StaleWhileRevalidate } from 'workbox-strategies';
 
 importScripts('js/vendors/workbox-v5.1.4/workbox-sw.js');
+workbox.setConfig({
+    modulePathPrefix: 'js/vendors/workbox-v5.1.4/'
+});
 
 self.addEventListener('message', (event) => {
     if (event.data && event.data.type === 'SKIP_WAITING') {
