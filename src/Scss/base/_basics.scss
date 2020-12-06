@@ -14,8 +14,6 @@ body {
     font-family: 'Manrope Regular', 'Arial', sans-serif;
     font-weight: $font-weight-regular;
     line-height: 1.6;
-
-    // background: url('../images/grunge_purple2X.jpg');
     background: var(--body-bg) var(--body-bg-img);
     color: var(--body-txt, $body-txt-default);
     transition: color 300ms, background-color 300ms;
