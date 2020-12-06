@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function toggleMobileNavi() {
         html.classList.toggle('site-navigation-isopen');
-        // html.classList.toggle('noscroll');
     }
 
     if (burger) {
@@ -60,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     themeToggle.addEventListener('click', function () {
-        console.log('hallo mond');
         if (htmlEl.dataset.theme === 'dark') {
             toggleTheme('light');
         } else {
