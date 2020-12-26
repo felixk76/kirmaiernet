@@ -4,7 +4,6 @@ module.exports = {
         'css/style.min.css',
         'fonts/bignoodletitling.woff2',
         'fonts/manrope-variable-subset.woff2',
-        'images/intro/intro_500.webp',
         'images/grunge-dark.jpg',
         'images/grunge2X.jpg',
         'apple-touch-icon.png',
