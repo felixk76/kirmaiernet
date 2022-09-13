@@ -14,10 +14,12 @@ module.exports = config => {
 
     const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
     const svgContents = require("eleventy-plugin-svg-contents");
-    const pluginInlineCss = require('@navillus/eleventy-plugin-inline-css')
+    const pluginInlineCss = require('@navillus/eleventy-plugin-inline-css');
+    const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
     config.addPlugin(eleventyNavigationPlugin);
     config.addPlugin(svgContents);
+    config.addPlugin(syntaxHighlight);
 
     config.addCollection('footer', collection => {
         return collection
