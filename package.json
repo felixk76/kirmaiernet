@@ -76,7 +76,7 @@
     "time-grunt": "^2.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^1.0.2",
     "@navillus/eleventy-plugin-inline-css": "^1.0.3",
     "eleventy-plugin-svg-contents": "^0.7.0",
     "eslint-nibble": "^5.1.0",
@@ -89,8 +89,8 @@
     "mrm": "^2.3.3",
     "picturefill": "^3.0.3",
     "stylelint-find-new-rules": "^2.0.0",
-    "workbox-build": "^5.1.4",
-    "workbox-cli": "^5.1.4"
+    "workbox-build": "^6.5.4",
+    "workbox-cli": "^6.5.4"
   },
   "optionalDependencies": {
     "eslint-nibble": "^5.1.0",
