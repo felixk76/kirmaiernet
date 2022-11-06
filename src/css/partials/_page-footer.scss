@@ -35,13 +35,14 @@
 .site-footer-legal-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 5px 1.25em;
     color: var(--site-footer-txt, $site-footer-txt-default);
     background: var(--site-footer-bg, $site-footer-bg-default);
     border-top: 3px solid var(--site-footer-border, $site-footer-border-default);
     font-size: 16px;
+    font-weight: bold;
 
     @include bp(medium1) {
         padding: 0 2.5em;
