@@ -1,7 +1,7 @@
 {
   "extends": ["stylelint-config-felixk76"],
   "ignoreFiles": [
-    "src/Scss/vendors/*.scss"
+    "src/css/vendors/*.scss"
   ],
   "rules": {
     "font-weight-notation": "numeric"
