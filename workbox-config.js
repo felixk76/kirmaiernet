@@ -1,14 +1,14 @@
 module.exports = {
     'globDirectory': 'dist/',
     'globPatterns': [
-        'css/style.min.css',
+        'css/style.css',
         'fonts/bignoodletitling.woff2',
         'fonts/manrope-variable-subset.woff2',
         'images/grunge-dark.jpg',
         'images/grunge2X.jpg',
         'apple-touch-icon.png',
         'favicon-16x16.png',
-        'js/base.min.js',
+        'js/base.js',
         'js/instantpage.min.js',
         'offline/index.html'
     ],

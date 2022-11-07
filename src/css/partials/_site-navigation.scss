@@ -59,7 +59,8 @@
         margin-bottom: 15px;
         background: var(--site-navigation-text-gradient, $site-navigation-text-gradient-default);
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text; /* stylelint-disable-line property-no-vendor-prefix */
+        -webkit-text-fill-color: transparent;  /* stylelint-disable-line property-no-vendor-prefix */
 
         @include bp(large1) {
             display: inline;
@@ -70,7 +71,8 @@
             background: none;
             color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
             background-clip: none;
-            -webkit-text-fill-color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
+            -webkit-background-clip: none;  /* stylelint-disable-line property-no-vendor-prefix */
+            -webkit-text-fill-color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);  /* stylelint-disable-line property-no-vendor-prefix */
 
             @include bp(large1) {
                 text-decoration: underline;
@@ -104,7 +106,7 @@
         background: none;
         color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
         background-clip: none;
-        -webkit-text-fill-color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);
+        -webkit-text-fill-color: var(--site-navigation-link-hover, $site-navigation-link-hover-default);  /* stylelint-disable-line property-no-vendor-prefix */
 
         @include bp(large1) {
             text-decoration: none;
