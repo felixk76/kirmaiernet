@@ -1,9 +1,9 @@
 ---
-title: 'Felix Kirmaier - Frontend Developer - Datenschutz'
+title: 'Felix Kirmaier - Frontend Developer - Lighthouse Tools'
 layout: 'layouts/text.html'
 eleventyNavigation:
-    key: Datenschutz
-    order: 2
+    #key: Lighthouse
+    #order: 2
 changeFreq: 'weekly'
 mainheadline: 'Lighthouse Tools'
 
